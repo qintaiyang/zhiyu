@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:paddingLeft="@dimen/collection_base_margin" android:paddingRight="@dimen/collection_base_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_line_shape" android:animateLayoutChanges="true" android:showDividers="end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/background" android:padding="@dimen/collection_base_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.kook.view.avatar.VariableAvatarImageView android:id="@id/avatar_user" android:layout_width="@dimen/collection_user_avatar_size" android:layout_height="@dimen/collection_user_avatar_size" android:scaleType="fitXY" android:layout_centerVertical="true" app:roundedCornerRadius="5.0dip" />
+            <com.kook.view.TextViewFit android:textSize="@dimen/collection_user_name_size" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="name" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/collection_user_name_margin_left" android:layout_marginEnd="@dimen/collection_user_name_margin_left" android:layout_toStartOf="@id/tv_time" android:layout_toEndOf="@id/avatar_user" />
+            <com.kook.view.TextViewFit android:textSize="@dimen/collection_time_size" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="time" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/collection_text_content_margin_top" />
+    </LinearLayout>
+</LinearLayout>

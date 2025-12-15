@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/default_siv_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/piv_line_top" android:background="@color/divider_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" android:layout_marginLeft="@dimen/default_item_paddingLeft" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.kook.view.TextViewFit android:textSize="@dimen/default_item_text_size" android:textColor="@color/black" android:id="@id/switcher_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_item_paddingLeft" android:layout_centerVertical="true" />
+            <com.kook.view.TextViewFit android:textSize="@dimen/material_text_button" android:textColor="#80000000" android:id="@id/switcher_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:lines="1" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <com.kook.view.SwitchButton android:id="@id/switcher_image" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:kswBackDrawable="@drawable/kk_switch_track_selector" app:kswThumbDrawable="@drawable/kk_switch_thumb_selector" />
+    </LinearLayout>
+    <com.kook.view.TextViewFit android:textSize="14.0sp" android:textColor="@color/text_normal" android:layout_gravity="center_vertical" android:id="@id/text_sub" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_item_paddingLeft" android:layout_marginBottom="14.0dip" />
+    <View android:id="@id/placeholderView" android:visibility="visible" android:layout_width="1.0dip" android:layout_height="14.0dip" />
+    <View android:id="@id/piv_line_bottom" android:background="@color/divider_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" android:layout_marginLeft="@dimen/default_item_paddingLeft" android:layout_marginBottom="0.0dip" />
+</LinearLayout>

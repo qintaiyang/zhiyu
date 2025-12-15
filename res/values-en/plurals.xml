@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kk_duration_days_relative">
+        <item quantity="other">%d days ago</item>
+        <item quantity="one">%d day ago</item>
+    </plurals>
+    <plurals name="kk_duration_days_relative_future">
+        <item quantity="other">%d days later</item>
+        <item quantity="one">%d day later</item>
+    </plurals>
+    <plurals name="kk_duration_days_shortest">
+        <item quantity="other">%d days</item>
+        <item quantity="one">%d day</item>
+    </plurals>
+    <plurals name="kk_duration_days_shortest_future">
+        <item quantity="other">%d days later</item>
+        <item quantity="one">%d day later</item>
+    </plurals>
+    <plurals name="kk_duration_hours_relative">
+        <item quantity="other">%d hours ago</item>
+        <item quantity="one">%d hour ago</item>
+    </plurals>
+    <plurals name="kk_duration_hours_relative_future">
+        <item quantity="other">%d hours later</item>
+        <item quantity="one">%d hour later</item>
+    </plurals>
+    <plurals name="kk_duration_hours_shortest">
+        <item quantity="other">%d hours</item>
+        <item quantity="one">%d hour</item>
+    </plurals>
+    <plurals name="kk_duration_hours_shortest_future">
+        <item quantity="other">%d hours later</item>
+        <item quantity="one">%d hour</item>
+    </plurals>
+    <plurals name="kk_duration_minutes_relative">
+        <item quantity="other">%d minutes ago</item>
+        <item quantity="one">%d minute ago</item>
+    </plurals>
+    <plurals name="kk_duration_minutes_relative_future">
+        <item quantity="other">%d minutes later</item>
+        <item quantity="one">%d minute later</item>
+    </plurals>
+    <plurals name="kk_duration_minutes_shortest">
+        <item quantity="other">%d minutes</item>
+        <item quantity="one">%d minute</item>
+    </plurals>
+    <plurals name="kk_duration_minutes_shortest_future">
+        <item quantity="other">%d minutes later</item>
+        <item quantity="one">%d minute later</item>
+    </plurals>
+    <plurals name="kk_duration_years_relative">
+        <item quantity="other">%d years ago</item>
+        <item quantity="one">%d year ago</item>
+    </plurals>
+    <plurals name="kk_duration_years_relative_future">
+        <item quantity="other">%d years later</item>
+        <item quantity="one">%d year later</item>
+    </plurals>
+    <plurals name="kk_duration_years_shortest">
+        <item quantity="other">%d years</item>
+        <item quantity="one">%d year</item>
+    </plurals>
+    <plurals name="kk_duration_years_shortest_future">
+        <item quantity="other">%d years later</item>
+        <item quantity="one">%d year later</item>
+    </plurals>
+</resources>

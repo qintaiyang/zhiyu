@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/icon_layout" android:paddingLeft="@dimen/main_item_margin_left" android:paddingTop="@dimen/user_img_margin_top_bottom" android:paddingRight="@dimen/conversation_avatar_marginRigh" android:paddingBottom="@dimen/user_img_margin_top_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <com.kook.view.avatar.VariableAvatarImageView android:id="@id/item_icon" android:layout_width="@dimen/group_member_icon_size" android:layout_height="@dimen/group_member_icon_size" android:src="@drawable/icon_excel" app:roundedCornerRadius="@dimen/avatar_roundedCornerRadius" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/icon_layout" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/choose_item_text_color" android:ellipsize="end" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/corp_tree_org_name_max_size" android:maxLines="1" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/text_normal" android:gravity="center" android:id="@id/tv_tag" android:background="@drawable/label_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:lines="1" />
+                </LinearLayout>
+                <TextView android:textSize="13.0sp" android:textColor="@color/choose_head_text_color" android:ellipsize="end" android:id="@id/item_atta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxWidth="@dimen/corp_tree_org_name_max_size" android:maxLines="1" />
+            </LinearLayout>
+            <ImageView android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_toRightOf="@id/icon_layout" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

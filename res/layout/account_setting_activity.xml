@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/base_item_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kook.view.BaseItemView android:id="@id/piv_change_pwd" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bottomLine="true" app:canEdit="true" app:line_style="short_line" app:textLeft="@string/change_password" app:textRight="" app:topLine="false" />
+    <com.kook.view.BaseItemView android:id="@id/piv_gesture_fingerprint" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bottomLine="false" app:canEdit="true" app:line_style="short_line" app:textLeft="@string/gesture_fingerprint" app:topLine="false" />
+</LinearLayout>

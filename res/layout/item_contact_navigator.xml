@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/item_default_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kook.view.avatar.AvatarImageView android:id="@id/iv_avatar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/app_icon" android:layout_centerHorizontal="true" app:fadeDuration="0" app:roundedCornerRadius="@dimen/avatar_roundedCornerRadius" />
+    <TextView android:id="@id/tv_badge" android:background="@drawable/target_user_new_bg" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="-5.0dip" android:layout_alignTop="@id/iv_avatar" android:layout_alignRight="@id/iv_avatar" />
+    <com.kook.view.TextViewFit android:textSize="13.0sp" android:textColor="@color/tip_text_color" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="12.0dip" android:layout_below="@id/iv_avatar" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_below="@id/tv_name" />
+</RelativeLayout>

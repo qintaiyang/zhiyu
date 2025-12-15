@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/layout_avatar" android:background="#ff15171a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/group_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.kook.view.avatar.AvatarImageView android:layout_gravity="center" android:id="@id/iv_avatar" android:layout_width="125.0dip" android:layout_height="125.0dip" />
+        <ProgressBar android:id="@id/pb_status" android:layout_width="46.0dip" android:layout_height="10.0dip" android:indeterminateDrawable="@drawable/kk_dot_progress" android:progressDrawable="@drawable/kk_dot_progress" android:layout_centerInParent="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip">
+            <com.conference.view.VoiceAnim android:id="@id/iv_mute" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

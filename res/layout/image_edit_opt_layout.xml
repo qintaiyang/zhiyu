@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="@dimen/default_title_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/tv_cancel" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_img_edit_close" android:onClick="onClick" android:paddingStart="16.0dip" />
+    </FrameLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_op_sub" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewSwitcher android:id="@id/vs_op_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:measureAllChildren="true">
+            <com.kook.view.pictureedit.view.IMGColorGroup android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/cg_colors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/cr_red">
+                <com.kook.view.pictureedit.view.IMGColorRadio android:id="@id/cr_red" android:layout_width="@dimen/image_color" android:layout_height="@dimen/image_color" android:layout_margin="@dimen/image_color_margin" android:button="@null" app:image_color="@color/image_color_red" />
+                <com.kook.view.pictureedit.view.IMGColorRadio android:layout_width="@dimen/image_color" android:layout_height="@dimen/image_color" android:layout_margin="@dimen/image_color_margin" app:image_color="@color/image_color_black" />
+                <com.kook.view.pictureedit.view.IMGColorRadio android:layout_width="@dimen/image_color" android:layout_height="@dimen/image_color" android:layout_margin="@dimen/image_color_margin" app:image_color="@color/image_color_white" />
+                <com.kook.view.pictureedit.view.IMGColorRadio android:layout_width="@dimen/image_color" android:layout_height="@dimen/image_color" android:layout_margin="@dimen/image_color_margin" app:image_color="@color/image_color_cyan" />
+                <com.kook.view.pictureedit.view.IMGColorRadio android:layout_width="@dimen/image_color" android:layout_height="@dimen/image_color" android:layout_margin="@dimen/image_color_margin" app:image_color="@color/image_color_yellow" />
+                <com.kook.view.pictureedit.view.IMGColorRadio android:layout_width="@dimen/image_color" android:layout_height="@dimen/image_color" android:layout_margin="@dimen/image_color_margin" app:image_color="@color/image_color_blue" />
+            </com.kook.view.pictureedit.view.IMGColorGroup>
+            <TextView android:textSize="12.0sp" android:textColor="@color/image_color_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image_mosaic_tip" />
+        </ViewSwitcher>
+        <ImageButton android:id="@id/btn_undo" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_btn_undo" android:onClick="onClick" android:contentDescription="@string/image_undo" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/text_deep" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/rg_modes" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/rb_doodle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/image_btn_doodle" android:onClick="onClick" />
+            <View android:layout_width="@dimen/image_mode_space" android:layout_height="wrap_content" />
+            <ImageButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_text" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_btn_text" android:onClick="onClick" android:contentDescription="@string/image_text" />
+            <View android:layout_width="@dimen/image_mode_space" android:layout_height="wrap_content" />
+            <RadioButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/rb_mosaic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/image_btn_mosaic" android:onClick="onClick" />
+            <View android:layout_width="@dimen/image_mode_space" android:layout_height="wrap_content" />
+            <ImageButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_clip" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_btn_clip" android:onClick="onClick" android:contentDescription="@string/image_clip" />
+        </RadioGroup>
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_done" android:background="@drawable/message_button_bottom_send_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image_done" android:onClick="onClick" />
+    </LinearLayout>
+</LinearLayout>

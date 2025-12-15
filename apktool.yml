@@ -1,0 +1,22 @@
+version: 2.12.1
+apkFileName: base.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 28
+packageInfo:
+  forcedPackageId: 127
+versionInfo:
+  versionCode: 6967
+  versionName: 8.0.0.6967
+doNotCompress:
+- arsc
+- gif
+- mp3
+- ogg
+- png
+- wav
+- webp
+- assets/.jgapp

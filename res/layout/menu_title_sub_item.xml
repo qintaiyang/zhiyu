@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="?android:listPreferredItemHeightSmall" android:minWidth="196.0dip" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kook.view.textview.IconTextView android:textSize="20.0sp" android:gravity="center" android:id="@id/iv_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="?android:listPreferredItemPaddingEnd" />
+    <TextView android:textAppearance="?android:textAppearanceListItem" android:gravity="center" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11111" />
+</LinearLayout>

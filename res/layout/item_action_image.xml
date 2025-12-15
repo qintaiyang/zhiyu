@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image_item" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" fresco:actualImageScaleType="centerCrop" fresco:failureImage="@drawable/icon_image_unload" fresco:failureImageScaleType="fitXY" fresco:placeholderImage="@drawable/img_placeholder" fresco:placeholderImageScaleType="fitXY" fresco:progressBarAutoRotateInterval="1000" fresco:progressBarImage="@drawable/ic_loading" fresco:progressBarImageScaleType="centerInside" fresco:retryImage="@drawable/ic_refresh_black_24dp" fresco:retryImageScaleType="fitXY" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/default_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/topLine" android:background="@color/lineGray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginStart="@dimen/default_item_paddingLeft" android:layout_marginEnd="@dimen/default_item_paddingRight" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff32373c" android:gravity="center_vertical" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_item_paddingLeft" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/personal_right_arrow" android:layout_width="7.6999817dip" android:layout_height="12.299988dip" android:src="@drawable/ic_right" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:ellipsize="end" android:gravity="end" android:id="@id/tv_white_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" android:layout_toStartOf="@id/personal_right_arrow" android:layout_toEndOf="@id/tv_label" />
+    <View android:id="@id/bottom_line" android:background="@color/lineGray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/default_item_paddingLeft" android:layout_marginEnd="@dimen/default_item_paddingRight" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="@dimen/choose_item_height">
+        <TextView android:textSize="@dimen/user_name_text_size" android:textColor="@color/text_deep" android:ellipsize="end" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/choose_base_margin_left" android:layout_marginBottom="@dimen/choose_base_margin_left" android:maxWidth="@dimen/corp_tree_org_name_max_size" android:text="@string/group_member_tag" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/choose_base_margin_left" android:layout_marginEnd="@dimen/choose_base_margin_left" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/choose_base_margin_left" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="bottom" android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" />
+</FrameLayout>

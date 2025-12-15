@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/kk_16dp" android:src="@drawable/icon_work_state_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/icon_item_work_status_selected" android:layout_toLeftOf="@id/iv_delete" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/iv_select">
+        <TableLayout android:id="@id/TableLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shrinkColumns="0">
+            <TableRow>
+                <TextView android:textSize="17.0sp" android:textColor="@color/text_gray_90" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <View android:background="#10333840" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" android:layout_marginStart="16.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

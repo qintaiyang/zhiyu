@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_deep" android:id="@id/tv_tag_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设计师" android:layout_marginStart="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_deep" android:id="@id/tv_tag_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_group_member_count" app:layout_constraintBottom_toBottomOf="@id/tv_tag_name" app:layout_constraintStart_toEndOf="@id/tv_tag_name" app:layout_constraintTop_toTopOf="@id/tv_tag_name" />
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/tv_tag_name" app:layout_constraintTop_toBottomOf="@id/tv_tag_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

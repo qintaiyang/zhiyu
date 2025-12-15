@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kook.view.SwitcherItemView android:id="@id/swv_accept_notify" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_item_margin_top" app:swBottomLine="false" app:swLeftText="@string/accept_notify" app:swTopLine="false" />
+    <TextView android:textSize="@dimen/text_size_explain" android:textColor="#ff979ca4" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_left" android:layout_marginTop="10.0dip" android:text="@string/notify_intro" />
+    <com.kook.view.SwitcherItemView android:id="@id/swv_sound" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:swBottomLine="false" app:swLeftText="@string/sound" app:swTopLine="false" />
+    <com.kook.view.SwitcherItemView android:id="@id/swv_vibration" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:shortLine="true" app:swBottomLine="false" app:swLeftText="@string/vibration" app:swTopLine="true" />
+    <com.kook.view.SwitcherItemView android:id="@id/swv_push" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:shortLine="true" app:swBottomLine="false" app:swLeftText="@string/notify_push_display" app:swTopLine="true" app:toggle="true" />
+</LinearLayout>

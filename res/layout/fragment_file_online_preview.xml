@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_failure" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_failure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_http_error" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.23" />
+        <TextView android:textColor="@color/text_normal" android:id="@id/txt_failure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/kk_load_file_fail" app:layout_constraintEnd_toEndOf="@id/img_failure" app:layout_constraintStart_toStartOf="@id/img_failure" app:layout_constraintTop_toBottomOf="@id/img_failure" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/btn_retry" android:background="@drawable/common_btn_bg_fill" android:layout_width="0.0dip" android:layout_height="36.0dip" android:text="@string/click_retry" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="10:3" app:layout_constraintEnd_toEndOf="@id/img_failure" app:layout_constraintStart_toStartOf="@id/img_failure" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.83" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.kook.view.webview.WebErrView android:id="@id/web_err_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/not_preview_file_info_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llFileView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/default_gray_color2" android:id="@id/tv_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/chat_file_not_support_preview" />
+            <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.kook.im.view.file.FilePreviewView android:id="@id/localFilePreviewView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/toolLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_file" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textColor="@color/text_blue_selector" android:gravity="center" android:id="@id/tv_file_result" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/chat_file_open" android:layout_weight="1.0" />
+            <View android:background="#ffe5e5e5" android:layout_width="@dimen/default_item_line_height" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            <TextView android:textColor="@color/text_blue_selector" android:gravity="center" android:id="@id/tv_forword" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/chat_file_forword" android:layout_weight="1.0" />
+            <View android:background="#ffe5e5e5" android:layout_width="@dimen/default_item_line_height" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            <TextView android:textColor="@color/text_blue_selector" android:gravity="center" android:id="@id/tv_star" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/chat_file_star" android:layout_weight="1.0" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ProgressBar android:id="@id/progress_bar_download" android:layout_width="0.0dip" android:layout_height="3.0dip" android:max="100" android:progressDrawable="@drawable/progress_drawable_horizon" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+            <ImageView android:id="@id/img_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:src="@drawable/icon_download_pause" app:layout_constraintEnd_toStartOf="@id/tv_progress" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/progress_bar_download" />
+            <TextView android:textColor="@color/text_deep" android:id="@id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/chat_file_progress_text" app:layout_constraintBottom_toBottomOf="@id/img_pause" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/img_pause" app:layout_constraintTop_toTopOf="@id/img_pause" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

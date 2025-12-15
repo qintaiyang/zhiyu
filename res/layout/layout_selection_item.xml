@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LinearLayoutDividerStyle">
+        <com.kook.view.TextViewFit android:textSize="@dimen/text_size_16" android:textColor="@color/textColorPrimary" android:id="@id/text_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.299988dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:layout_weight="1.0" />
+        <com.kook.view.textview.IconTextView android:textSize="20.0sp" android:textColor="#ff0f82f0" android:layout_gravity="center_vertical" android:id="@id/iv_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.299988dip" android:text="@string/icon_nav_radio" />
+    </LinearLayout>
+    <View android:id="@id/select_line" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" android:layout_marginLeft="15.299988dip" />
+</LinearLayout>

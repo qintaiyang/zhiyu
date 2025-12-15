@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_msg_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_audio" android:background="@drawable/chat_combine_bg_rounded" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip">
+        <com.kook.im.view.audio.AudioView android:id="@id/audio_view" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="9.0dip" app:av_durColor="@color/msg_text_color_left" app:av_icon="@drawable/message_voice_playorpause_right_selector" app:av_seekBarColor="@drawable/chat_msg_item_audio_seekbar_progress_right" app:av_seekThumb="@drawable/icon_audio_progress_indicator" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_label" android:paddingLeft="15.0dip" android:paddingRight="12.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/default_item_line_bg" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/msg_text_color_left" android:id="@id/tv_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

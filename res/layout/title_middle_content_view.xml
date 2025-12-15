@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/text_deep" android:ellipsize="end" android:id="@id/tv_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="@integer/maxTitleEms" android:singleLine="true" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/text_normal" android:ellipsize="end" android:id="@id/tv_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="2.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_router_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_router_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_chat_notice" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/text_normal" android:ellipsize="end" android:id="@id/txt_router_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="15" android:singleLine="true" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

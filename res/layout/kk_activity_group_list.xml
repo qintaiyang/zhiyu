@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_search" android:background="@drawable/common_search_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ffced2d9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/message_search" android:drawableLeft="@drawable/icon_search" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_group" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabGravity="fill" app:tabIndicator="@drawable/bg_tab_indicator" app:tabIndicatorHeight="2.0dip" app:tabMaxWidth="0.0dip" app:tabMode="fixed" />
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="@dimen/split_one_pixels" />
+    <FrameLayout android:id="@id/fragment_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

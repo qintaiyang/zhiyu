@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/item_moment_default_bg" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_private_moment_header" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+        <include layout="@layout/include_private_moment_left_date" />
+        <com.kook.view.textview.ClickShowMoreLayout android:id="@id/item_text_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" app:show_line="5" app:text_color="@color/normal_font_color" app:text_size="15.0sp" />
+    </LinearLayout>
+    <View android:background="#ffc6cfd8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="90.0dip" android:layout_marginTop="10.0dip" />
+</LinearLayout>

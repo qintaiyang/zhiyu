@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_line_shape" android:showDividers="beginning"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kook.view.TextViewFit android:id="@id/tv_first_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/collection_text_content_margin_top" android:layout_marginBottom="@dimen/collection_text_content_margin_top" />
+    <com.kook.view.TextViewFit android:textColor="@color/black" android:ellipsize="end" android:id="@id/tv_first_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    <com.kook.view.TextViewFit android:id="@id/tv_second_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/collection_text_content_margin_top" android:layout_marginBottom="@dimen/collection_base_margin" />
+    <com.kook.view.TextViewFit android:textColor="@color/black" android:ellipsize="end" android:id="@id/tv_second_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+</LinearLayout>

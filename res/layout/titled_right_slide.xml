@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tiv_image_slide" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="15.299988dip" android:layout_alignParentRight="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tiv_iv_image" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

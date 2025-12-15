@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/ll_msg_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/msg_tips_text_color" android:id="@id/tv_clear_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/rl_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/chat_video" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.kook.view.ChatImageView android:id="@id/imageView" app:roundedCornerRadius="12.0dip" style="@style/chat_image_msg_style" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/iv_time_shadow" android:background="@drawable/bottom_to_top_shadow" android:layout_width="fill_parent" android:layout_height="22.0dip" />
+        </FrameLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_video_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignRight="@id/chat_video" android:layout_alignBottom="@id/chat_video" android:paddingEnd="10.0dip" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_play_icon" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/kk_bt_play" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.kook.view.progress.CircleProgressBar android:id="@id/cpb_upload" android:layout_width="48.0dip" android:layout_height="48.0dip" app:innerPadding="1.0dip" app:progressReachColor="@color/white" app:progressStyle="FillInnerArc" app:radius="15.0dip" />
+    </LinearLayout>
+</RelativeLayout>

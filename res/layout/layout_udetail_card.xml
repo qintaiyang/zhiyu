@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/item_default_bg" android:paddingLeft="15.299988dip" android:paddingTop="13.0dip" android:paddingRight="15.299988dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kook.view.avatar.VariableAvatarImageView android:id="@id/aiv_udetail_avatar" android:layout_width="48.0dip" android:layout_height="48.0dip" app:roundedCornerRadius="8.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/aiv_udetail_avatar" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.kook.view.TextViewFit android:textSize="@dimen/text_size_18" android:textColor="@color/text_deep" android:id="@id/tv_udetail_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.kook.view.TextViewFit android:textSize="@dimen/text_size_18" android:textColor="@color/kkColorError" android:id="@id/tv_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_udetail_gender" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/ll_name" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <com.kook.view.TextViewFit android:textSize="@dimen/text_size_12" android:textColor="@color/gray_normal_color" android:id="@id/tv_ext_contact" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_outside_contact" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_udetail_status" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/ll_name" android:layout_centerVertical="true" />
+</RelativeLayout>

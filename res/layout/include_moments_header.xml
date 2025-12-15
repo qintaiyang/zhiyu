@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/item_padding" android:paddingRight="@dimen/item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kook.view.avatar.VariableAvatarImageView android:id="@id/avatar" android:layout_width="@dimen/circle_item_avatar" android:layout_height="@dimen/circle_item_avatar" android:layout_marginTop="@dimen/item_padding" android:scaleType="centerCrop" app:roundedCornerRadius="@dimen/circle_item_avatar_corner" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_user" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/avatar">
+        <com.kook.view.TextViewFit android:textSize="@dimen/fd_middle_font" android:textStyle="bold" android:textColor="@color/nick" android:ellipsize="end" android:id="@id/nick" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_padding" android:singleLine="true" />
+        <com.kook.view.autoflow.AutoFlowLayout android:id="@id/flow_target" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:maxLines="2" />
+    </LinearLayout>
+    <com.kook.view.textview.ClickShowMoreLayout android:id="@id/item_text_field" android:background="@drawable/item_moment_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/ll_user" android:layout_alignLeft="@id/ll_user" app:click_text_color="@color/moment_normal_blue_text_color" app:show_line="6" app:text_color="@color/moment_normal_text_color" app:text_size="15.0sp" />
+</RelativeLayout>

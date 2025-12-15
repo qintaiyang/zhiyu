@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="9.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/llBodyTitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kook.view.TextViewFit android:textSize="@dimen/msg_btn_title_text" android:textColor="@color/text_deep" android:id="@id/tvBodyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llBodyImage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+        <com.kook.view.SimpleDraweeViewFit android:id="@id/sdvBodyImage" android:layout_width="fill_parent" android:layout_height="180.0dip" android:maxHeight="500.0dip" android:minHeight="180.0dip" app:actualImageScaleType="fitXY" app:failureImage="@drawable/icon_image_unload" app:failureImageScaleType="fitXY" app:placeholderImage="@drawable/img_placeholder" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="3.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llBodyContent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.kook.view.LinkClickTextViewFit android:textSize="@dimen/msg_btn_normal_text" android:textColor="@color/text_deep" android:id="@id/tvBodyContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

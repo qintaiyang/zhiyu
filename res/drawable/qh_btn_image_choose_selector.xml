@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/qh_btn_choose2_normal" />
+    <item android:state_selected="true" android:state_pressed="true">
+        <shape android:shape="oval" android:useLevel="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/qh_BluePrimary" />
+            <stroke android:width="2.0dip" android:color="@color/qh_BluePrimary" />
+        </shape>
+    </item>
+</selector>

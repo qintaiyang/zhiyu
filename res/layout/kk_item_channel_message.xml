@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/text_deep" android:ellipsize="end" android:gravity="center" android:id="@id/tvChannelValueName" android:background="@drawable/kk_white_channel_bg" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="6.0dip" android:singleLine="true" />
+    <ImageView android:id="@id/materialBadgeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6.0dip" android:layout_marginRight="-6.0dip" android:src="@drawable/icon_unread_red_dot" android:layout_alignTop="@id/tvChannelValueName" android:layout_alignRight="@id/tvChannelValueName" />
+</RelativeLayout>

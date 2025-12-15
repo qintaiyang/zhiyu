@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LinearLayoutDividerStyle">
+                <include layout="@layout/layout_udetail_card" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/itemMarginTopSize" style="@style/LinearLayoutDividerStyle">
+                <com.kook.view.TitledItemView android:id="@id/tiv_work_circle" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleName="@string/user_work_circle" app:tiv_rightImage="@drawable/icon_contact_right_arrow" app:tiv_top_line="false" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_udetail_dept" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/itemMarginTopSize" style="@style/LinearLayoutDividerStyle">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_udetail_dept" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.kook.view.TitledItemView android:id="@id/tiv_udetail_work_no" android:background="@drawable/item_default_transparent_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleName="@string/user_worknum" app:tiv_top_line="false" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_user_hideable_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/itemMarginTopSize" style="@style/LinearLayoutDividerStyle">
+                <com.kook.view.TitledItemView android:id="@id/tiv_udetail_enname" android:background="@drawable/item_default_transparent_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleName="@string/personal_item_enname" app:tiv_top_line="false" />
+                <com.kook.view.TitledItemView android:id="@id/tiv_udetail_mobile" android:background="@drawable/item_default_transparent_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleName="@string/user_mobile" />
+                <com.kook.view.TitledItemView android:id="@id/tiv_udetail_email" android:background="@drawable/item_default_transparent_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleName="@string/personal_email" />
+                <com.kook.view.TitledItemView android:id="@id/tiv_udetail_tel" android:background="@drawable/item_default_transparent_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleName="@string/personal_tel" />
+                <com.kook.view.TitledItemView android:id="@id/tiv_udetail_address" android:background="@drawable/item_default_transparent_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleName="@string/address" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_udetail_sign" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/itemMarginTopSize" style="@style/LinearLayoutDividerStyle">
+                <com.kook.view.TitledItemView android:id="@id/tiv_udetail_sign" android:background="@drawable/item_default_transparent_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleName="@string/signature" app:tiv_top_line="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.kook.view.TextViewFit android:textSize="@dimen/user_info_send_message_font_size" android:id="@id/tvf_send_btn" android:layout_width="fill_parent" android:layout_height="@dimen/login_btn_heigh" android:layout_marginLeft="@dimen/user_info_send_message_margin_left_right" android:layout_marginTop="@dimen/user_info_item_margin_top_bottom" android:layout_marginRight="@dimen/user_info_send_message_margin_left_right" android:layout_marginBottom="@dimen/user_info_item_margin_top_bottom" android:text="@string/user_send_message" style="@style/kook_blue_btn_style" />
+    <com.kook.view.TextViewFit android:textSize="@dimen/user_info_send_message_font_size" android:id="@id/tvf_add_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/login_btn_heigh" android:layout_marginLeft="@dimen/user_info_send_message_margin_left_right" android:layout_marginTop="@dimen/user_info_item_margin_top_bottom" android:layout_marginRight="@dimen/user_info_send_message_margin_left_right" android:layout_marginBottom="@dimen/user_info_item_margin_top_bottom" android:text="@string/user_add_contact" style="@style/kook_blue_btn_style" />
+</LinearLayout>

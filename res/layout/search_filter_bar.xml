@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/fl_search_filter_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:id="@id/ll_filter_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/divider_line_space_10dp" android:showDividers="middle" android:layout_marginStart="16.0dip" />
+    <com.kook.view.TextViewFit android:textSize="14.0sp" android:textColor="@color/colorPrimary" android:layout_gravity="end|center" android:id="@id/tv_reset" android:background="@drawable/item_default_bg" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_reset" android:layout_marginEnd="6.0dip" />
+</merge>

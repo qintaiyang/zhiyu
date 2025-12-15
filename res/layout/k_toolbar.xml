@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ktb_navigation_view" android:background="?actionBarItemBackground" android:paddingLeft="@dimen/title_bar_default_padding" android:paddingRight="@dimen/title_bar_default_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/title_bar_default_padding" android:paddingEnd="@dimen/title_bar_default_padding">
+        <ImageView android:id="@id/ktb_navigation_icon" android:layout_width="12.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_return" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/material_text_title" android:textColor="@color/text_blue1" android:id="@id/ktb_navigation_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/ktb_navigation_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/ktb_title_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/material_text_title" android:textColor="@color/default_title_text_color" android:id="@id/ktb_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="18" />
+            <TextView android:textSize="@dimen/material_text_subhead" android:id="@id/ktb_subtitle_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

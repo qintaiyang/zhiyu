@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/back_text" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.cjt2325.cameralibrary.JCameraView android:id="@id/jcameraview" android:layout_width="fill_parent" android:layout_height="fill_parent" app:duration_max="30000" app:iconMargin="20.0dip" app:iconSize="30.0dip" app:iconSrc="@drawable/bt_overturn" />
+</FrameLayout>

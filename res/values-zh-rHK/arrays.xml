@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender">
+        <item>@string/female</item>
+        <item>@string/male</item>
+    </string-array>
+    <string-array name="language_list">
+        <item>跟隨系統</item>
+        <item>繁體中文</item>
+        <item>简体中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="lock_time">
+        <item>立即</item>
+        <item>1分鐘</item>
+        <item>3分鐘</item>
+        <item>10分鐘</item>
+    </string-array>
+    <string-array name="reminder_time">
+        <item>開始時間點</item>
+        <item>提前5分鐘</item>
+        <item>提前10分鐘</item>
+        <item>提前15分鐘</item>
+        <item>提前30分鐘</item>
+        <item>提前1小時</item>
+        <item>提前1天</item>
+        <item>提前2天</item>
+        <item>提前1周</item>
+    </string-array>
+    <integer-array name="reminder_time2">
+        <item>0</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>1800</item>
+        <item>3600</item>
+        <item>86400</item>
+        <item>172800</item>
+        <item>604800</item>
+    </integer-array>
+    <string-array name="reminder_time_fullday">
+        <item>當天(9:00)</item>
+        <item>提前1天(9:00)</item>
+        <item>提前2天(9:00)</item>
+        <item>提前1周(9:00)</item>
+    </string-array>
+    <integer-array name="reminder_time_integer_2">
+        <item>0</item>
+        <item>86400</item>
+        <item>172800</item>
+        <item>604800</item>
+    </integer-array>
+    <string-array name="reminder_who">
+        <item>提醒我與參與人</item>
+        <item>僅提醒我</item>
+        <item>僅提醒參與人</item>
+    </string-array>
+    <string-array name="schedule_repeat">
+        <item>不重複</item>
+        <item>每天</item>
+        <item>每周</item>
+        <item>工作日</item>
+        <item>每月</item>
+        <item>每年</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/kk_8dp">
+        <androidx.appcompat.widget.AppCompatEditText android:textColor="@color/text_deep" android:gravity="start|top" android:id="@id/et_signture" android:background="@color/white" android:paddingLeft="@dimen/kk_16dp" android:paddingTop="@dimen/kk_16dp" android:paddingRight="@dimen/kk_16dp" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="240.0dip" android:hint="请输入快捷回复..." />
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/common_input_hint" android:id="@id/tv_sign_edit_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/kk_16dp" android:layout_marginBottom="@dimen/kk_16dp" android:layout_alignRight="@id/et_signture" android:layout_alignBottom="@id/et_signture" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/bg_red" android:gravity="center" android:id="@id/tv_delete_bos" android:background="@drawable/btn_red_stroke_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/kk_16dp" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/text_size_16" android:text="@string/delete" android:layout_alignBottom="@id/tv_sign_edit_size" />
+</LinearLayout>

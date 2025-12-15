@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chat_card_width">288.0dip</dimen>
+    <dimen name="common_dialog_margin_lr_sum">128.0dip</dimen>
+    <dimen name="home_tab_max_width">100.0dip</dimen>
+    <dimen name="link_popup_margin_right">80.0dip</dimen>
+    <dimen name="max_contact_item_name_width">520.0dip</dimen>
+    <dimen name="max_user_name_width">500.0dip</dimen>
+    <dimen name="recent_image_height">230.0dip</dimen>
+    <dimen name="recent_image_offset_x">40.0dip</dimen>
+    <dimen name="recent_image_width">150.0dip</dimen>
+</resources>

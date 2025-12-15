@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ll_call_tips" android:background="@drawable/chat_force_call_pop_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/itvIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_strong_call" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textColor="@color/text_blue" android:id="@id/tv_call_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/chat_call_noanswer_count_text" android:lines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/itvIcon" app:layout_constraintRight_toLeftOf="@id/tv_call_tips_close" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/tv_call_tips_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_strong_close" android:layout_marginStart="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/tv_call_tips" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="right" android:orientation="vertical" android:id="@id/ll_msg_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_location" android:background="@drawable/chat_right_location_bg_rounded" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="252.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_deep" android:ellipsize="end" android:id="@id/tv_place" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_normal" android:ellipsize="end" android:id="@id/tv_address" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:lines="1" />
+        <com.kook.view.fresco.StateDraweeView android:id="@id/mapImage" android:layout_width="fill_parent" android:layout_height="100.0dip" app:roundTopEnd="false" app:roundTopStart="false" app:roundedCornerRadius="12.0dip" style="@style/chat_image_msg_style" />
+    </LinearLayout>
+    <TextView android:textColor="@color/msg_tips_text_color" android:id="@id/tv_clear_lication" android:background="@drawable/chatto_right_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.appcompat.widget.LinearLayoutCompat>

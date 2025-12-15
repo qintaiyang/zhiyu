@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kook.im.view.workportal.BannerView android:id="@id/rv_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="110.0dip" />
+    <com.kook.view.indicator.DotIndicator android:layout_gravity="bottom" android:id="@id/dot_indicator" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+</androidx.cardview.widget.CardView>

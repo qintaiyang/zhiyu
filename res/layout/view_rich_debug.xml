@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/input_panel_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="调试" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/input_panel_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="重新打开编辑器后生效" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/input_panel_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正常最大输入长度：" />
+        <EditText android:id="@id/et_limit_nor" android:layout_width="200.0dip" android:layout_height="wrap_content" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/input_panel_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="撤回重编最大输入长度：" />
+        <EditText android:id="@id/et_limit_recall" android:layout_width="200.0dip" android:layout_height="wrap_content" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/input_panel_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="在线编辑最大输入长度：" />
+        <EditText android:id="@id/et_limit_online" android:layout_width="200.0dip" android:layout_height="wrap_content" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/input_panel_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="引用消息时最大输入长度：" />
+        <EditText android:id="@id/et_limit_reference" android:layout_width="200.0dip" android:layout_height="wrap_content" android:inputType="number" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/input_panel_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="当输入长度无限制时：" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/input_panel_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息分割长度：" />
+        <EditText android:id="@id/et_split" android:layout_width="200.0dip" android:layout_height="wrap_content" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/input_panel_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分割后同时发送原长度数据:" />
+        <CheckBox android:id="@id/cb_send_origin" android:layout_width="40.0dip" android:layout_height="40.0dip" android:checked="false" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/input_panel_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="当前图片名：" />
+    <LinearLayout android:orientation="vertical" android:id="@id/paths" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kook.view.ChatImageView android:id="@id/img_photo" android:layout_width="200.0dip" android:layout_height="wrap_content" app:failureImage="@drawable/icon_image_unload" app:placeholderImage="@drawable/img_placeholder" app:placeholderImageScaleType="fitXY"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

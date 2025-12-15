@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:variablePadding="true" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:duration="400" android:drawable="@drawable/kk_dot_progress_1" />
+    <item android:gravity="center" android:duration="400" android:drawable="@drawable/kk_dot_progress_2" />
+    <item android:gravity="center" android:duration="400" android:drawable="@drawable/kk_dot_progress_3" />
+</animation-list>

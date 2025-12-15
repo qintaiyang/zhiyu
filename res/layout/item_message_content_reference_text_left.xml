@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_msg_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content_main" android:background="@drawable/chat_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.kook.view.TextViewFit android:textColor="#ff959ca6" android:textColorLink="@color/msg_text_link_color_left" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_reference_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="20" />
+        <View android:id="@id/tv_line" android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" android:layout_marginTop="9.0dip" />
+        <com.kook.view.SongLyricTextView android:textSize="@dimen/message_text_size" android:textColor="@color/msg_text_color_left" android:textColorLink="@color/msg_text_link_color_left" android:ellipsize="end" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:maxLines="20" />
+        <com.kook.view.TextViewFit android:textColor="@color/text_blue" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_op_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/spread_text" android:drawableEnd="@drawable/icon_msg_more_end" />
+    </LinearLayout>
+    <com.kook.view.TextViewFit android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_snapchat_countdown" android:background="@drawable/bg_snapchat_count" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="16.0dip" android:layout_marginTop="-8.0dip" android:layout_alignTop="@id/ll_content_main" android:layout_marginEnd="-10.0dip" android:layout_alignEnd="@id/ll_content_main" />
+</RelativeLayout>

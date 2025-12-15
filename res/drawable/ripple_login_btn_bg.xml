@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/bule_pressed_color"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask" android:drawable="@drawable/bg_bule_btn_pressed" />
+    <item>
+        <selector>
+            <item android:state_enabled="true" android:state_pressed="true">
+                <shape>
+                    <solid android:color="#ffa8cbff" />
+                    <corners android:radius="33.0dip" />
+                </shape>
+            </item>
+            <item android:state_enabled="true" android:state_pressed="false" android:drawable="@drawable/bg_bule_btn_normal" />
+            <item android:state_enabled="false" android:drawable="@drawable/bg_bule_btn_unenable" />
+        </selector>
+    </item>
+</ripple>

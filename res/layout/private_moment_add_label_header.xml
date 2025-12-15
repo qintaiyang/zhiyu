@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="78.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/moment_date_big_text_size2" android:textColor="@color/private_moment_text_color" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/moments_now" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_moment_add" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="12.669983dip" android:src="@drawable/kk_bt_moment_add_selector" />
+    </LinearLayout>
+    <View android:background="#ffc6cfd8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="90.0dip" android:layout_marginTop="25.0dip" />
+</LinearLayout>

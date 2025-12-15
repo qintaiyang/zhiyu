@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" android:layout_marginTop="20.0dip" />
+    <com.kook.view.BaseItemView android:id="@id/piv_address_zone" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bottomLine="true" app:canEdit="true" app:textLeft="@string/area" app:textRight="@string/please_choose" />
+    <com.kook.view.ClearEditText android:id="@id/et_detail_address" android:background="@color/white" android:paddingLeft="15.299988dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/input_detailed_address" app:autoSize="true" />
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdvThumb" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" app:roundedCornerRadius="3.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/textColorPrimary" android:ellipsize="middle" android:id="@id/tvFileName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+    <com.kook.view.textview.IconTextView android:textSize="24.0sp" android:gravity="center" android:id="@id/iconClose" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="fill_parent" android:text="@string/icon_bt_close" android:layout_alignParentRight="true" />
+</RelativeLayout>

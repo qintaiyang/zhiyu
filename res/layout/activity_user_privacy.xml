@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tool="http://schemas.android.com/apk/res-auto">
+    <TextView android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/privacy_ext_contact_tip" />
+    <com.kook.view.SwitcherItemView android:id="@id/siv_m_num" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" tool:swBottomLine="false" tool:swLeftText="@string/personal_phone_num" />
+    <com.kook.view.SwitcherItemView android:id="@id/siv_t_num" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" tool:swBottomLine="false" tool:swLeftText="@string/personal_tel" />
+    <com.kook.view.SwitcherItemView android:id="@id/siv_pos" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" tool:swBottomLine="false" tool:swLeftText="@string/kk_pos" />
+    <com.kook.view.SwitcherItemView android:id="@id/siv_email" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" tool:swBottomLine="false" tool:swLeftText="@string/personal_email" />
+    <com.kook.view.SwitcherItemView android:id="@id/siv_address" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" tool:swBottomLine="false" tool:swLeftText="@string/address" />
+    <com.kook.view.SwitcherItemView android:id="@id/siv_w_id" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" tool:swLeftText="@string/personal_work_id" />
+</LinearLayout>

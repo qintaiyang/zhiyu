@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TimePicker android:id="@id/time_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/picker_date_time_style" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+        <TextView android:id="@id/btn_no_time" android:padding="@dimen/message_input_icon_marginBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_time" android:layout_toLeftOf="@id/btn_ok" />
+        <TextView android:id="@id/btn_ok" android:padding="@dimen/message_input_icon_marginBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

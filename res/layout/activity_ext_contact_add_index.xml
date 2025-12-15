@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" android:text="@string/add_contact_tip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/bt_minisearch" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/iconColorSecondary" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/ext_contact_search_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/setting_select_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask" android:drawable="@color/itemMask" />
+    <item>
+        <selector>
+            <item android:state_activated="true">
+                <color android:color="@color/bg_accent_grey" />
+            </item>
+            <item android:state_checked="true">
+                <color android:color="@color/bg_accent_grey" />
+            </item>
+            <item android:state_selected="true">
+                <color android:color="@color/bg_accent_grey" />
+            </item>
+            <item android:state_pressed="true">
+                <color android:color="@color/bg_accent_grey" />
+            </item>
+            <item>
+                <color android:color="@color/transparent" />
+            </item>
+        </selector>
+    </item>
+</ripple>

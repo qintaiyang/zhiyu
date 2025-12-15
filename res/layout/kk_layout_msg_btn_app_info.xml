@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/llAppInfo" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kook.view.avatar.AvatarImageView android:layout_gravity="center_vertical" android:id="@id/aivAppAvatar" android:layout_width="40.0dip" android:layout_height="40.0dip" app:roundedCornerRadius="3.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/textColorPrimary" android:layout_gravity="center_vertical" android:id="@id/tvAppName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:lines="1" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/bots_label_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_bots" android:background="@drawable/bg_bots_label" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="110.0dip" android:text="@string/chat_bots" android:singleLine="true" />
+</LinearLayout>

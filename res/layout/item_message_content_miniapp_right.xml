@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/ll_msg_root" android:background="@drawable/chatto_card_bg" android:layout_width="252.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/item_message_content_miniapp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_mini_app_logo" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" app:failureImage="@drawable/icon_image_unload" app:placeholderImage="@drawable/img_placeholder" app:placeholderImageScaleType="fitCenter" app:roundAsCircle="true" />
+            <com.kook.view.TextViewFit android:textSize="@dimen/message_name_text_size" android:textColor="@color/text_gray3" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_mini_app_name" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="8.0dip" android:text="小程序名称" android:maxLines="1" />
+        </LinearLayout>
+        <com.kook.view.TextViewFit android:textSize="15.0sp" android:textColor="@color/textColorPrimary" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="标题" android:maxLines="2" />
+        <com.kook.view.SimpleDraweeViewFit android:id="@id/sdvBodyImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="12.0dip" android:maxHeight="280.0dip" app:actualImageScaleType="fitXY" app:failureImage="@drawable/icon_image_unload" app:failureImageScaleType="fitXY" app:placeholderImage="@drawable/img_placeholder" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="3.0dip" app:viewAspectRatio="1.0" />
+        <View android:background="@color/default_item_line_bg" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" android:layout_marginLeft="12.0dip" android:layout_marginTop="9.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <ImageView android:id="@id/iv_label" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/qh_icon_miniapp_logo" />
+            <com.kook.view.TextViewFit android:textSize="11.0sp" android:textColor="#ffbec7d0" android:ellipsize="end" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/mini_app_name" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

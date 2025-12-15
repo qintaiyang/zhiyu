@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_client" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:src="@drawable/kk_ic_device_online_desktop" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff32373c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/login_other_client_text" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/btn_red" android:id="@id/tv_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/network_connect_break_off2" />
+    <android.widget.Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/login_other_client" android:background="@drawable/ripple_login_btn_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="58.0dip" android:layout_marginRight="58.0dip" android:text="@string/login_other_client" />
+    <TextView android:textColor="@color/text_blue_selector" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="100.0dip" android:text="@string/login_cancel" />
+</androidx.appcompat.widget.LinearLayoutCompat>

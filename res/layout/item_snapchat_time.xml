@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/text_deep" android:id="@id/txt_sc_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kook.view.textview.IconTextView android:textSize="20.0sp" android:textColor="#ff0f82f0" android:id="@id/img_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_nav_radio" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="@id/txt_sc_time" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/txt_sc_time" />
+    <View android:id="@id/select_line" android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" android:layout_marginTop="16.0dip" android:layout_alignParentBottom="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/txt_sc_time" />
+</androidx.constraintlayout.widget.ConstraintLayout>

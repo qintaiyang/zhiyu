@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/switch_picker_image" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/title_right_icon" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/icon_down" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_black_selector" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/__picker_all_image" android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

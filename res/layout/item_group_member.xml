@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_group_member_root" android:background="@drawable/item_default_transparent_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="@dimen/group_member_icon_size" android:layout_height="@dimen/group_member_icon_size" android:layout_marginLeft="@dimen/group_setting_item_margin_left_right" android:layout_marginTop="@dimen/group_setting_item_margin_top" android:layout_marginBottom="@dimen/group_setting_item_margin_top">
+            <com.kook.view.avatar.VariableAvatarImageView android:id="@id/item_icon" android:layout_width="@dimen/group_member_icon_size" android:layout_height="@dimen/group_member_icon_size" app:roundedCornerRadius="@dimen/avatar_roundedCornerRadius" />
+            <com.kook.view.TextViewFit android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tv_attach" android:background="@drawable/bg_group_role" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="12.0dip">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/item_content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/kk_16dp">
+                <TextView android:textSize="@dimen/corp_tree_user_name_size" android:textColor="@color/text_deep" android:ellipsize="end" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="6" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/conversation_item_content_textColor" android:ellipsize="end" android:id="@id/item_corp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/item_name" android:layout_alignLeft="@id/item_name" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_normal" android:ellipsize="end" android:gravity="center" android:id="@id/item_sub" android:background="@drawable/label_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/item_name" android:layout_centerVertical="true" android:layout_marginStart="4.0dip" />
+                <com.kook.im.view.chat.GroupMemberTagView android:id="@id/gmt_group_member_tag" android:clickable="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:gmt_tag_background="@drawable/bg_group_member_tag_white" app:gmt_tag_background_default="@drawable/bg_group_member_tag_default_white" style="@style/GroupMemberTagView" />
+            </RelativeLayout>
+            <TextView android:id="@id/tv_badge" android:background="@drawable/target_user_new_bg" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="-5.0dip" android:layout_alignTop="@id/item_content_layout" android:layout_centerVertical="true" android:layout_toEndOf="@id/item_content_layout" />
+            <ImageView android:id="@id/line_short" android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

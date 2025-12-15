@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_search" android:background="@drawable/common_search_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+            <com.kook.view.AutoFocusEditText android:id="@id/menu_search_edit" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search" android:lines="1" android:singleLine="true" android:drawableLeft="@drawable/icon_search" android:drawablePadding="4.0dip" android:inputType="text" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:background="@color/background" android:paddingBottom="10.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.kook.view.sidebar.EasyRecyclerViewSidebar android:layout_gravity="right|center" android:id="@id/side_bar" android:layout_width="15.0dip" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_long_height">50.0dip</dimen>
+    <dimen name="item_contact_gap">12.0dip</dimen>
+    <dimen name="online_ops_top">90.0dip</dimen>
+</resources>

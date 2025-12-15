@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="tag_stream" />
+    <item type="id" name="tag_stream_init_flag" />
+</resources>

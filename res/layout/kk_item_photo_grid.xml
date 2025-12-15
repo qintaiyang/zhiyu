@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/picker_photo_grid_item_img" android:layout_width="80.0dip" android:layout_height="80.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/image_default_style" />
+    <RelativeLayout android:id="@id/picker_photo_grid_item_select_hotpot" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="@id/picker_photo_grid_item_img" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/picker_photo_grid_item_select" android:background="@drawable/btn_image_choose_selector" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/llVideoTag" android:background="@drawable/bottom_shadow" android:layout_width="0.0dip" android:layout_height="20.0dip" app:layout_constraintBottom_toBottomOf="@id/picker_photo_grid_item_img" app:layout_constraintLeft_toLeftOf="@id/picker_photo_grid_item_img" app:layout_constraintRight_toRightOf="@id/picker_photo_grid_item_img">
+        <ImageView android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_bt_video_icon" android:layout_alignParentBottom="true" android:paddingStart="6.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tvVideoLength" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

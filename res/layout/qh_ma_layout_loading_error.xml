@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/loading_error_imageView" android:layout_width="128.0dip" android:layout_height="128.0dip" android:layout_marginTop="90.0dip" android:src="@drawable/qh_icon_mini_app_loading_error" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/qh_sp_14" android:textColor="@color/qh_grey" android:id="@id/errorMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/qh_dp_40" android:layout_marginTop="@dimen/qh_dp_24" android:layout_marginRight="@dimen/qh_dp_40" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/loading_error_imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

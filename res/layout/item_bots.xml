@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bots_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/conversation_item_padding_ho" android:paddingTop="@dimen/conversation_item_padding_ve" android:paddingRight="@dimen/conversation_item_padding_ho" android:paddingBottom="@dimen/conversation_item_padding_ve" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kook.view.avatar.VariableAvatarImageView android:id="@id/bots_avatar" android:layout_width="@dimen/conversation_avatar_size" android:layout_height="@dimen/conversation_avatar_size" android:layout_marginTop="9.0dip" android:layout_marginRight="@dimen/conversation_avatar_marginRigh" android:layout_marginBottom="9.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:roundedCornerRadius="@dimen/avatar_roundedCornerRadius" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.kook.view.TextViewFit android:textSize="@dimen/conversation_item_name_textSize" android:textColor="@color/text_deep" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bots_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxWidth="240.0dip" android:lines="1" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/text_normal" android:gravity="center" android:id="@id/tv_target_label" android:background="@drawable/label_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/kk_inter_label" android:lines="1" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+                </LinearLayout>
+                <com.kook.view.TextViewFit android:textSize="@dimen/conversation_item_content_textSize" android:textColor="@color/text_normal" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bots_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lines="1" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textColor="@color/blue_point" android:gravity="center" android:id="@id/add_bot" android:background="@drawable/bots_add_status_selector" android:paddingTop="@dimen/qh_dp_3" android:paddingBottom="@dimen/qh_dp_3" android:layout_width="56.0dip" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:id="@id/bottomLine" android:background="@color/default_item_line_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/light_line_size" android:layout_marginLeft="@dimen/conversation_item_line_marginLeft" />
+</LinearLayout>

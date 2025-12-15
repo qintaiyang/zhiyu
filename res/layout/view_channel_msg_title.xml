@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_root" android:background="@color/chat_bg" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/default_text_color" android:ellipsize="end" android:id="@id/tvChannelTabName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="5" android:layout_centerInParent="true" />
+    <com.kook.view.textview.IconTextView android:textSize="16.0sp" android:textColor="@color/default_text_color" android:id="@id/tvChannelIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_tuzz_arrow" android:layout_toRightOf="@id/tvChannelTabName" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/materialBadgeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_unread_red_dot" android:layout_toRightOf="@id/tvChannelIcon" android:layout_centerVertical="true" android:layout_toEndOf="@id/tvChannelIcon" />
+</RelativeLayout>

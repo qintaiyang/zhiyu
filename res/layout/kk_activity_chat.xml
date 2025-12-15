@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kook.kkbizbase.watermark.WaterMarkRelativeLayout android:id="@id/activity_chat" android:background="@color/chat_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kook.im.view.chat.ChatSwipeRefreshLayout android:id="@id/swip_refresh" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.kook.im.view.chat.SlideCutListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:transcriptMode="normal" android:divider="@null" />
+        </com.kook.im.view.chat.ChatSwipeRefreshLayout>
+        <com.kook.view.chatInput.ChatInput android:id="@id/input_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:id="@id/multi_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" layout="@layout/chat_bottom_multi" />
+        <ImageView android:enabled="false" android:gravity="center" android:id="@id/img_combine_forward" android:background="#fff2f2f3" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/sel_chat_forward" android:scaleType="centerInside" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/editTextBodyLl" android:background="@drawable/kk_top_line_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="36.0dip">
+            <EditText android:textSize="16.0sp" android:id="@id/etInput" android:background="@color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="textMultiLine" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/sendIv" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:text="@string/ok" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/ll_msg_top" android:visibility="gone" layout="@layout/kk_msg_top_view" />
+        <include android:layout_gravity="center_horizontal" android:id="@id/ll_call_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" layout="@layout/kk_call_tips_view" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_audio_tips" android:background="@color/text_blue1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textColor="@color/white" android:id="@id/tv_audio_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="@string/speaker_close_tips" />
+            <android.widget.Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/white" android:id="@id/tv_audio_tips_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/close" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_blue" android:gravity="center" android:layout_gravity="right" android:id="@id/tv_unread_count" android:background="@drawable/chat_unread_bg" android:paddingLeft="12.0dip" android:paddingTop="9.0dip" android:paddingRight="16.0dip" android:paddingBottom="9.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:drawableLeft="@drawable/icon_unread_count" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+    <include android:id="@id/ll_select_follow_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="122.0dip" layout="@layout/kk_chat_combine_select_follow_msg" />
+    <View android:id="@id/black_bg" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.kook.kkbizbase.watermark.WaterMarkRelativeLayout>

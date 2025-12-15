@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@drawable/qh_image_bg_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="20.0">
+        <ImageButton android:id="@id/ib_clip_rotate" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/qh_image_btn_rotate" android:onClick="onClick" android:contentDescription="@string/qh_image_rotate" android:layout_marginStart="20.0dip" />
+        <FrameLayout android:orientation="horizontal" android:paddingTop="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/ib_clip_cancel" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:src="@drawable/qh_image_btn_cancel" android:onClick="onClick" android:contentDescription="@string/qh_cancel" android:layout_marginStart="40.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/qh_image_color_text" android:layout_gravity="center" android:id="@id/tv_clip_reset" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qh_image_reset" android:onClick="onClick" />
+            <ImageButton android:layout_gravity="end|center" android:id="@id/ib_clip_done" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:src="@drawable/qh_image_btn_ok" android:onClick="onClick" android:contentDescription="@string/qh_image_done" android:layout_marginEnd="40.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

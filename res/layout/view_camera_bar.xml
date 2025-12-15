@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_camera" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip">
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/switchCamera" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <com.kook.view.PressImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_camera" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_white_selector" android:id="@id/tv_switch_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_switch_camera_close" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/conversionCamera" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="49.0dip" android:layout_weight="1.0">
+            <com.kook.view.PressImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_conversion_camera" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_white_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_conversion_camera" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

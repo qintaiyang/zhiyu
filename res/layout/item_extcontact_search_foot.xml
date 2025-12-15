@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_line_shape"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:showDividers="middle|end">
+        <TextView android:textSize="14.0sp" android:textColor="@color/app_theme_blue" android:gravity="center" android:layout_gravity="center" android:id="@id/add_more" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="44.0dip" android:drawableLeft="@drawable/icon_search_blue" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

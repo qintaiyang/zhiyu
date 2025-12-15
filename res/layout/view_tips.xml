@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/tip_background_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@id/img_tips" android:layout_width="@dimen/tip_img_wight_height" android:layout_height="@dimen/tip_img_wight_height" android:src="@drawable/icon_tipsbar_exclamation" android:layout_marginEnd="@dimen/tip_img_margin_left" />
+        <com.kook.view.TextViewFit android:textSize="@dimen/tip_text_size" android:textColor="@color/tip_text_color" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

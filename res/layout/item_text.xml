@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kook.view.TextViewFit android:textSize="@dimen/message_text_size" android:textColor="@color/text_deep" android:textColorLink="@color/msg_text_link_color_left" android:ellipsize="end" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/tv_reference_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    <View android:id="@id/tv_line" android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" android:layout_marginTop="5.0dip" />
+    <com.kook.view.SpanEllipsizeTextView android:textColor="@color/text_deep" android:textColorLink="@color/text_blue" android:ellipsize="end" android:id="@id/expand_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="2" />
+</LinearLayout>

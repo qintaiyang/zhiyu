@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kook.view.TextViewFit android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.kook.view.TextViewFit android:textColor="#ff576b95" android:gravity="center" android:id="@id/desc_op_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+</LinearLayout>

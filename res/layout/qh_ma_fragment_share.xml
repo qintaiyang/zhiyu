@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/qh_ma_ll_sheet_root" android:background="@drawable/qh_bg_fragment_share_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" app:behavior_hideable="true" app:behavior_peekHeight="0.0dip" app:layout_behavior="@string/bottom_sheet_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="16.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_applogo" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/qh_app_icon" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff32373c" android:gravity="center" android:id="@id/tvShareTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="10.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_sheet" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="4.0dip" android:layout_weight="9.0" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ff282828" android:gravity="center" android:id="@id/tv_cancel_share" android:background="@color/qh_white" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginTop="16.0dip" android:text="取消" />
+</LinearLayout>

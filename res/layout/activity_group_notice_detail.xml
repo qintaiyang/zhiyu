@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_title" android:layout_width="fill_parent" android:layout_height="@dimen/default_title_height">
+        <ImageView android:id="@id/img_back" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/icon_back" android:paddingStart="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginLeft="4.0dip" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/text_deep" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/img_back" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/imgMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_group_notice_more" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/imgToNoticeList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_group_list" android:layout_marginEnd="18.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/imgMore" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/edit_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="14.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_deep" android:id="@id/txtNotice" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_normal" android:id="@id/txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_normal" android:id="@id/txtDate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

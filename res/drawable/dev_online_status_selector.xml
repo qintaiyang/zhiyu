@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/kk_ic_device_online_desktop" />
+    <item android:state_selected="false" android:drawable="@drawable/kk_ic_online_status_close" />
+</selector>

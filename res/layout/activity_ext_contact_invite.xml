@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.669983dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="6.669983dip" android:text="@string/ext_contact_invite_tip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_line_shape" android:showDividers="beginning|end">
+        <com.kook.view.AutoFocusEditText android:gravity="top" android:id="@id/tv_invite_content" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:minLines="2" android:maxLength="40" />
+    </LinearLayout>
+</LinearLayout>

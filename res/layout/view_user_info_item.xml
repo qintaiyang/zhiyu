@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/default_item_text_size" android:textColor="@color/default_text_color_black" android:gravity="left" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.699982dip" android:singleLine="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/img_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/user_info_item_margin_left" android:layout_marginRight="@dimen/user_info_item_margin_left" android:src="@drawable/app_icon" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.kook.view.TextViewFit android:textSize="@dimen/default_item_text_size" android:textColor="@color/user_ifo_item_text_color" android:ellipsize="end" android:gravity="right" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/user_info_item_margin_left" android:maxLines="1" android:lines="1" android:singleLine="true" android:layout_toLeftOf="@id/img_icon" android:layout_toRightOf="@id/tv_label" android:layout_centerVertical="true" />
+    <View android:id="@id/siv_line_bottom" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" android:layout_alignLeft="@id/tv_label" android:layout_alignParentBottom="true" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kook.im.ui.view.KKToolbar android:gravity="center_vertical" android:id="@id/base_title_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" toolbar:contentInsetLeft="0.0dip" toolbar:contentInsetStart="0.0dip" toolbar:contentInsetStartWithNavigation="0.0dip" toolbar:popupTheme="@style/ToolbarPopupTheme" toolbar:skinDynamic="true" toolbar:theme="@style/ChatToolbarTheme" toolbar:titleTextAppearance="@style/Toolbar.TitleText" toolbar:useSkin="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:toolbar="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back" android:paddingStart="16.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_deep" android:id="@id/txt_cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:paddingStart="16.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/text_deep" android:gravity="center" android:id="@id/txt_unread_count" android:background="@drawable/shape_chat_unread" android:layout_width="wrap_content" android:layout_height="20.0dip" android:minWidth="20.0dip" android:layout_marginStart="4.0dip" />
+</com.kook.im.ui.view.KKToolbar>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_msg_root" android:padding="0.0dip" android:layout_width="252.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.kook.view.TextViewFit android:textSize="@dimen/message_text_size" android:textColor="@color/msg_text_color_left" android:ellipsize="end" android:id="@id/tv_msg_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <com.kook.view.TextViewFit android:textSize="14.0sp" android:textColor="#ff979ca4" android:ellipsize="end" android:id="@id/tv_sub_summary1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="kkk\nsdf" android:maxLines="1" />
+        <com.kook.view.TextViewFit android:textSize="14.0sp" android:textColor="#ff979ca4" android:ellipsize="end" android:id="@id/tv_sub_summary2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="kkk\nsdf" android:maxLines="1" />
+        <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

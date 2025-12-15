@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_corp_tree" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_search" android:background="@drawable/common_search_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_item_margin_top" android:layout_marginBottom="@dimen/base_item_margin_top" android:layout_marginStart="@dimen/default_item_paddingLeft" android:layout_marginEnd="@dimen/default_item_paddingRight">
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_input_hint" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/message_search" android:drawableLeft="@drawable/icon_search" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+    <com.kook.view.CorpSelectView android:layout_gravity="center_vertical" android:id="@id/rv_corp" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/corp_tree_nav_list_height" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/fragment_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

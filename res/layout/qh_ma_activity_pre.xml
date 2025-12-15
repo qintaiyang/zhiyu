@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_title_mini_app_loading" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_pre_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/qh_bg_button_title_bar_normal_white" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <LinearLayout android:gravity="center" android:id="@id/ll_share" android:background="@drawable/qh_bg_button_title_action_share_white" android:clickable="true" android:layout_width="43.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip">
+                <ImageView android:id="@id/iv_share" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/qh_ico_more_black" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/line_layout" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip">
+                <View android:id="@id/line" android:background="@color/qh_black" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/ll_close" android:background="@drawable/qh_bg_button_title_action_close_white" android:clickable="true" android:layout_width="43.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip">
+                <ImageView android:id="@id/iv_close" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/qh_ico_close_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_pre_header" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_pre_header">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/logo" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/qh_dp_40" app:roundedCornerRadius="20.0dip" />
+        <TextView android:textSize="@dimen/qh_text_size_18" android:textColor="@color/qh_black" android:ellipsize="end" android:gravity="center" android:id="@id/title_content" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+        <com.qihoo.miniapp.ui.widget.PointLoadingView android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="@dimen/qh_dp_20" />
+    </LinearLayout>
+</RelativeLayout>

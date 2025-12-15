@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_voice_tools" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_round_voice_bar" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/ll_mute" android:paddingLeft="24.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_mute" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/kk_voice_selector" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ll_camera" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_camera" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/kk_camera_selector" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ll_hf" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_hf" android:background="@drawable/kk_speaker_selector" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ll_screen" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_screen" android:background="@drawable/ic_share_screen" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ll_hangup" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="24.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_hangup" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_hangup" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

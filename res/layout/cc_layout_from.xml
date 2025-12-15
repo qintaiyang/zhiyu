@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/text_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drive_file_location" android:layout_marginEnd="4.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/text_normal" android:ellipsize="end" android:id="@id/txt_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="0.5" />
+    <ImageView android:textColor="#ffa5a9af" android:id="@id/img_separator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_drive_from_separator" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/text_normal" android:ellipsize="end" android:id="@id/txt_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="0.5" />
+</LinearLayout>

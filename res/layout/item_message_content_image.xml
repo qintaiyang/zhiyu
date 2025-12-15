@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_msg_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:id="@id/ll_content_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip">
+        <com.kook.view.ChatImageView android:id="@id/imageView" app:roundedCornerRadius="12.0dip" style="@style/chat_image_msg_style" />
+        <TextView android:textColor="@color/msg_tips_text_color" android:id="@id/tv_clear_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:id="@id/pb_image" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@anim/progressbar_loading_place" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat" style="?android:progressBarStyleSmall" />
+            <TextView android:id="@id/tv_image_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="25%" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/img_snapchat_flag" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="-14.0dip" android:layout_marginBottom="-14.0dip" android:src="@drawable/ic_msg_snapchat_flag" android:layout_alignTop="@id/ll_content_main" android:layout_marginStart="-14.0dip" android:layout_marginEnd="-14.0dip" android:layout_alignStart="@id/ll_content_main" />
+    <com.kook.view.TextViewFit android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_snapchat_countdown" android:background="@drawable/bg_snapchat_count" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="16.0dip" android:layout_marginTop="-8.0dip" android:layout_alignTop="@id/ll_content_main" android:layout_marginEnd="-10.0dip" android:layout_alignEnd="@id/ll_content_main" />
+</RelativeLayout>

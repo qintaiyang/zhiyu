@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kook.view.SwitcherItemView android:id="@id/swv_ztc" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:swBottomLine="false" app:swLeftText="@string/msg_ztc_set_title" app:swTopLine="false" />
+    <com.kook.view.TextViewFit android:textColor="@color/text_normal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/msg_ztc_set_desc" />
+</LinearLayout>

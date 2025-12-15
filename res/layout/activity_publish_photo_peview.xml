@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kook.view.ImageViewPager android:id="@id/picker_image_preview_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.android.material.appbar.AppBarLayout android:layout_gravity="top" android:id="@id/app_title" android:layout_width="fill_parent" android:layout_height="@dimen/default_title_height" app:elevation="0.0dip">
+        <androidx.appcompat.widget.Toolbar android:gravity="right" android:id="@id/title_bar" android:background="#ff32373c" android:layout_width="fill_parent" android:layout_height="@dimen/default_title_height" />
+    </com.google.android.material.appbar.AppBarLayout>
+</FrameLayout>

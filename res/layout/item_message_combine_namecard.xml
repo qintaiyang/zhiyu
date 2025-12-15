@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_msg_root" android:background="@drawable/chat_combine_bg_rounded" android:layout_width="252.0dip" android:layout_height="wrap_content" android:layout_marginStart="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_icon" android:layout_width="44.0dip" android:layout_height="44.0dip" fresco:placeholderImage="@drawable/icon_no" fresco:placeholderImageScaleType="fitXY" fresco:roundedCornerRadius="@dimen/avatar_roundedCornerRadius" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="40.0dip">
+            <com.kook.view.TextViewFit android:textSize="@dimen/message_text_size" android:textColor="@color/msg_text_color_left" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" android:layout_marginStart="12.0dip" />
+            <com.kook.view.TextViewFit android:textSize="12.0sp" android:textColor="#ff979ca4" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" android:singleLine="true" android:layout_marginStart="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" android:layout_marginTop="12.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_light" android:id="@id/tv_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/chat_msg_label_namecard" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

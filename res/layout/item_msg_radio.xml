@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvAreaName" android:layout_width="fill_parent" android:layout_height="44.0dip" android:maxLines="2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llAreaRoot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/lineGray" android:showDividers="middle" android:dividerPadding="1.0px">
+        <include layout="@layout/kk_layout_radio_item" />
+    </LinearLayout>
+</LinearLayout>

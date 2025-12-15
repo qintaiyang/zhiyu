@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip">
+        <com.kook.view.avatar.AvatarImageView android:id="@id/avatar" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" app:roundedCornerRadius="2.0dip" />
+        <com.kook.view.TextViewFit android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff32373c" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_actions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/divider_line_shape_horizontal" android:showDividers="middle">
+            <com.kook.view.textview.IconTextView android:id="@id/iv_action1" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" />
+            <com.kook.view.textview.IconTextView android:id="@id/iv_action2" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <com.kook.view.textview.IconTextView android:id="@id/iv_action3" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <com.kook.view.textview.IconTextView android:id="@id/iv_action4" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <com.kook.view.textview.IconTextView android:id="@id/iv_action5" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <com.kook.view.textview.IconTextView android:id="@id/iv_action6" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

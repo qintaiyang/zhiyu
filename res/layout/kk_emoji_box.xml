@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ImageButton android:layout_gravity="bottom" android:id="@id/bt_emji" android:background="@drawable/ic_face_input" android:layout_width="@dimen/message_input_icon_size" android:layout_height="@dimen/message_input_icon_size" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <com.kook.view.kpswitch.widget.KPSwitchFSPanelLinearLayout android:id="@id/panel_root" android:visibility="gone" style="@style/kit_input_Panel">
+        <include layout="@layout/kk_panel_emoji" />
+    </com.kook.view.kpswitch.widget.KPSwitchFSPanelLinearLayout>
+</LinearLayout>

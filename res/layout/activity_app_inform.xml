@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/chat_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:transcriptMode="normal" android:divider="@null" />
+    <com.kook.view.webview.WebErrView android:id="@id/err_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:errMessage="@string/empty" />
+</RelativeLayout>

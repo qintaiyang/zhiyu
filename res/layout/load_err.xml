@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/load_status_err_label_size" android:id="@id/tv_err_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/load_status_err_label_margin_bottom" android:text="@string/load_data_err_text" />
+    <TextView android:textSize="@dimen/load_status_reload_btn_label_size" android:textColor="@color/bule_normal_color" android:id="@id/bt_reload" android:background="@drawable/bg_load_status_gray_btn_selector" android:paddingLeft="@dimen/load_status_reload_btn_padding_horizontal" android:paddingTop="@dimen/load_status_reload_btn_padding_vertical" android:paddingRight="@dimen/load_status_reload_btn_padding_horizontal" android:paddingBottom="@dimen/load_status_reload_btn_padding_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reload" />
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kk_duration_days_relative">
+        <item quantity="other">%d 天前</item>
+        <item quantity="one">%d 天前</item>
+    </plurals>
+    <plurals name="kk_duration_days_relative_future">
+        <item quantity="other">%d 天後</item>
+        <item quantity="one">%d 天後</item>
+    </plurals>
+    <plurals name="kk_duration_days_shortest">
+        <item quantity="other">%d 天</item>
+        <item quantity="one">%d 天</item>
+    </plurals>
+    <plurals name="kk_duration_days_shortest_future">
+        <item quantity="other">%d 天後</item>
+        <item quantity="one">%d 天後</item>
+    </plurals>
+    <plurals name="kk_duration_hours_relative">
+        <item quantity="other">%d 小時前</item>
+        <item quantity="one">%d 小時前</item>
+    </plurals>
+    <plurals name="kk_duration_hours_relative_future">
+        <item quantity="other">%d 小時后</item>
+        <item quantity="one">%d 小時后</item>
+    </plurals>
+    <plurals name="kk_duration_hours_shortest">
+        <item quantity="other">%d 小時</item>
+        <item quantity="one">%d 小時</item>
+    </plurals>
+    <plurals name="kk_duration_hours_shortest_future">
+        <item quantity="other">%d 小時后</item>
+        <item quantity="one">%d 小時后</item>
+    </plurals>
+    <plurals name="kk_duration_minutes_relative">
+        <item quantity="other">%d 分鐘前</item>
+        <item quantity="one">%d 分鐘前</item>
+    </plurals>
+    <plurals name="kk_duration_minutes_relative_future">
+        <item quantity="other">%d 分鐘后</item>
+        <item quantity="one">%d 分鐘后</item>
+    </plurals>
+    <plurals name="kk_duration_minutes_shortest">
+        <item quantity="other">%d 分鐘</item>
+        <item quantity="one">%d 分鐘</item>
+    </plurals>
+    <plurals name="kk_duration_minutes_shortest_future">
+        <item quantity="other">%d 分鐘后</item>
+        <item quantity="one">%d 分鐘后</item>
+    </plurals>
+    <plurals name="kk_duration_years_relative">
+        <item quantity="other">%d 年前</item>
+        <item quantity="one">%d 年前</item>
+    </plurals>
+    <plurals name="kk_duration_years_relative_future">
+        <item quantity="other">%d 年後</item>
+        <item quantity="one">%d 年後</item>
+    </plurals>
+    <plurals name="kk_duration_years_shortest">
+        <item quantity="other">%d 年</item>
+        <item quantity="one">%d 年</item>
+    </plurals>
+    <plurals name="kk_duration_years_shortest_future">
+        <item quantity="other">%d 年後</item>
+        <item quantity="one">%d 年後</item>
+    </plurals>
+</resources>

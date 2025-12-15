@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kook.im.view.workportal.ExpandTabView android:id="@id/expand_tab_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:background="@color/chat_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.kook.im.view.workportal.HoleRecyclerView android:id="@id/list" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </com.kook.im.view.workportal.ExpandTabView>
+    <ImageView android:id="@id/iv_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" />
+</RelativeLayout>

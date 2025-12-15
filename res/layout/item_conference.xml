@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_user_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <com.kook.view.avatar.AvatarImageView android:id="@id/avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/layout_renderer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_conference_item_name" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_name" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_screen" android:background="@drawable/ic_screen_share" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="4.0dip" />
+                <com.conference.view.VoiceAnim android:id="@id/iv_mute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@id/pb_status" android:layout_width="46.0dip" android:layout_height="10.0dip" android:indeterminateDrawable="@drawable/kk_dot_progress" android:progressDrawable="@drawable/kk_dot_progress" android:layout_centerInParent="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-2.0dip" android:layout_marginTop="-2.0dip" android:layout_marginRight="-2.0dip" android:layout_marginBottom="-2.0dip" android:src="@drawable/bg_user_select" android:layout_alignLeft="@id/rl_avatar" android:layout_alignTop="@id/rl_avatar" android:layout_alignRight="@id/rl_avatar" android:layout_alignBottom="@id/rl_avatar" />
+</RelativeLayout>

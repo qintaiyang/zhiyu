@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.kook.view.avatar.AvatarImageView android:id="@id/avatar" android:layout_width="100.0dip" android:layout_height="100.0dip" app:roundedCornerRadius="6.0dip" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="#b3ffffff" android:id="@id/tv_invite_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/invite_conference_text" />
+        <android.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.8" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/tv_list_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conference_user" />
+        <com.conference.view.DotViewPager android:layout_gravity="center_horizontal" android:id="@id/vp" android:layout_width="240.0dip" android:layout_height="120.0dip" android:layout_centerHorizontal="true" />
+        <android.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.8" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="90.0dip">
+                <com.kook.view.PressImageView android:id="@id/iv_hangup" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/kk_hangup_normal" />
+                <TextView android:textSize="14.0sp" android:textColor="#99ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kk_hangup_text" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.kook.view.PressImageView android:id="@id/iv_answer" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/kk_answer_selector" />
+                <TextView android:textSize="14.0sp" android:textColor="#99ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kk_answer_text" />
+            </LinearLayout>
+        </LinearLayout>
+        <android.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.6" />
+    </LinearLayout>
+    <ImageButton android:id="@id/iv_hide" android:background="@drawable/item_default_transparent_bg" android:paddingLeft="8.0dip" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/ic_keyboard_arrow_down_24dp" />
+</RelativeLayout>

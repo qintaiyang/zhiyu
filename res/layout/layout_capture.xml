@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/capture_frame" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:layout_gravity="center" android:id="@id/capture_preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:background="@color/transparent_80" android:paddingTop="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kook.im.ui.view.KKToolbar android:layout_gravity="top" android:id="@id/toolbar" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:useSkin="false" />
+    </LinearLayout>
+    <com.kook.im.util.zxing.view.ViewfinderView android:layout_gravity="center" android:id="@id/capture_viewfinder_view" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@color/capture_text_cover_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="33.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="25.0dip">
+            <ImageView android:id="@id/capture_flashlight" android:focusable="true" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/flash_light_selector" android:scaleType="fitCenter" />
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/flashlight" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip">
+            <ImageView android:id="@id/capture_scan_photo" android:focusable="true" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/icon_rich_scan" android:scaleType="fitCenter" />
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/scan_picture" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_msg_root" android:background="@drawable/chat_left_bg_rounded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.kook.view.TextViewFit android:textSize="@dimen/message_text_size" android:textColor="@color/msg_text_color_left" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="kkk" android:maxLines="2" />
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="9.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:minHeight="40.0dip">
+        <com.kook.view.fresco.FilterLoadSimpleDraweeView android:id="@id/iv_icon" android:layout_width="44.0dip" android:layout_height="44.0dip" fresco:placeholderImage="@drawable/icon_no" fresco:placeholderImageScaleType="fitXY" fresco:roundedCornerRadius="@dimen/avatar_roundedCornerRadius" />
+        <com.kook.view.TextViewFit android:textSize="12.0sp" android:textColor="@color/text_normal" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="256.0dip" android:maxLines="3" android:layout_marginStart="12.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:id="@id/image_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/ivPlayBtn" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/kk_bt_play" android:layout_centerInParent="true" />
+    <androidx.core.widget.ContentLoadingProgressBar android:id="@id/clb_progress" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminateDrawable="@drawable/loading" android:indeterminateBehavior="repeat" android:layout_centerInParent="true" style="?android:progressBarStyleSmall" />
+</RelativeLayout>

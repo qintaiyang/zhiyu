@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kook.im.ui.view.KKToolbar android:id="@id/base_title_bar" android:background="@color/titleBottomColor" android:layout_width="fill_parent" android:layout_height="@dimen/default_title_height" toolbar:contentInsetStart="0.0dip" toolbar:popupTheme="@style/ToolbarPopupTheme" toolbar:theme="@style/ToolbarTheme" toolbar:titleMarginBottom="0.0dip" toolbar:titleMarginStart="0.0dip" toolbar:titleMarginTop="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:toolbar="http://schemas.android.com/apk/res-auto">
+    <com.kook.view.textview.IconTextView android:textSize="@dimen/font_icon_size" android:gravity="center" android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/icon_bt_back" style="@style/Widget.AppCompat.Toolbar.Button.Navigation" />
+    <com.kook.view.textview.IconTextView android:textSize="@dimen/font_icon_size" android:gravity="center" android:id="@id/btn_close" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/icon_bt_close" style="@style/Widget.AppCompat.Toolbar.Button.Navigation" />
+    <TextView android:textSize="15.0sp" android:ellipsize="end" android:id="@id/title_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+</com.kook.im.ui.view.KKToolbar>

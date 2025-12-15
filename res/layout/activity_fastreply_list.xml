@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:divider="@null" android:layout_above="@id/rl_add_bos" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/bg_fastreply_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-70.0dip" />
+        <TextView android:textColor="@color/text_normal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/set_fastreply_hint" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/rl_add_bos" android:background="@drawable/ripple_login_btn_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/kk_16dp" android:layout_marginRight="@dimen/kk_16dp" android:layout_marginBottom="38.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:background="@drawable/ic_btn_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/tv_add_bos" android:layout_alignTop="@id/tv_add_bos" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_add_bos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_fastreply" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_failure" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_failure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_http_error" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.23" />
+        <TextView android:textColor="@color/text_normal" android:id="@id/txt_failure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/kk_load_fail" app:layout_constraintEnd_toEndOf="@id/img_failure" app:layout_constraintStart_toStartOf="@id/img_failure" app:layout_constraintTop_toBottomOf="@id/img_failure" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/btn_retry" android:background="@drawable/common_btn_bg_fill" android:layout_width="0.0dip" android:layout_height="36.0dip" android:text="@string/click_retry" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="10:3" app:layout_constraintEnd_toEndOf="@id/img_failure" app:layout_constraintStart_toStartOf="@id/img_failure" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.83" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

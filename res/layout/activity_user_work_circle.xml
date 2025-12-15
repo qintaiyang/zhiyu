@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_head" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/include_udetail_card2" layout="@layout/layout_udetail_card2" />
+        <View android:background="#ffc6cfd8" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <fragment android:name="com.kook.friendcircle.ui.userPrivateMoment.PrivateMomentFragment" android:id="@id/fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

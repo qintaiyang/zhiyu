@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/switch_picker_image" android:background="@drawable/qh_photo_select_title_bg" android:paddingLeft="12.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_centerVertical="true">
+        <TextView android:textSize="17.0sp" android:textColor="#ffececec" android:id="@id/tv_popu_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qh_picker_all_image" />
+        <ImageView android:id="@id/iv_popu_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/qh_ic_popu_hide" />
+    </LinearLayout>
+    <TextView android:enabled="false" android:textSize="@dimen/qh_photo_bottom_text_size" android:textColor="@color/qh_input_photos_text_selector" android:gravity="center" android:id="@id/picker_bottombar_select" android:background="@drawable/qh_button_blue_bg_selector" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="16.0dip" android:text="@string/qh_picker_image_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

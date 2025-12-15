@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/easy_alert_dialog_layout" android:background="@drawable/bottom_sheet_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/dialog_title_view" layout="@layout/bottom_sheet_alert_dialog_title" />
+    <ListView android:id="@id/easy_dialog_list_view" android:background="@drawable/dialog_bg2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/item_default_stick_bg" android:divider="@color/divider_line" android:dividerHeight="@dimen/light_line_size" />
+    <View android:background="@color/default_bg" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <TextView android:id="@id/cancel" android:background="@drawable/item_default_transparent_bg" android:text="@string/cancel" style="@style/custom_bottom_sheet_dialog_message_text_style" />
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" />
+</LinearLayout>

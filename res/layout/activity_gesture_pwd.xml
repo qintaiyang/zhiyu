@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.kook.view.avatar.AvatarImageView android:layout_gravity="center_horizontal" android:id="@id/aiv_avatar" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="48.0dip" fresco:roundAsCircle="true" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/textColorPrimary" android:layout_gravity="center_horizontal" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/textColorPrimary" android:layout_gravity="center_horizontal" android:id="@id/tv_gesture_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/draw_unlock" />
+    <FrameLayout android:id="@id/fl_fragment" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="20.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+        <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/tv_pwd_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/kk_login_by_account" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="right|bottom" android:id="@id/tv_use_gesture" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/kk_login_by_gesture" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

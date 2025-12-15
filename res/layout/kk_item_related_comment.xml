@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/item_moment_default_bg" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/avatar" android:layout_width="@dimen/circle_item_avatar" android:layout_height="@dimen/circle_item_avatar" android:scaleType="centerCrop" app:roundedCornerRadius="@dimen/circle_item_avatar_corner" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="30.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/fd_middle_font" android:textStyle="bold" android:textColor="@color/nick" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff32373c" android:id="@id/tv_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/kk_moment_time" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="60.0dip" android:layout_height="60.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image_content" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/image_default_style" />
+            <TextView android:textSize="@dimen/fd_s_small_font" android:textColor="@color/kk_related_new_comment_conent_text_color" android:gravity="center" android:id="@id/text_content" android:background="@color/kk_related_new_comment_conent_bg" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="3" />
+            <ImageView android:id="@id/iv_play_btn" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/kk_bt_play" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/kk_coment_item_bottom_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+</LinearLayout>

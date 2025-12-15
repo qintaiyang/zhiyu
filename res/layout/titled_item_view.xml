@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tiv_root" android:paddingLeft="@dimen/item_padding_left" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/tiv_top_line" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" />
+    <com.kook.view.TextViewFit android:textSize="@dimen/text_size_14" android:id="@id/tiv_title" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/view_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tiv_title">
+        <com.kook.view.TextViewFit android:textSize="@dimen/default_item_text_size" android:textColor="@color/black" android:id="@id/tiv_item_text" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="40.0dip" android:hint="@string/setting_item_no_data" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tiv_image_slide" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="15.299988dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/tiv_iv_image" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

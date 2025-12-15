@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingTop="20.0dip" android:layout_width="350.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自定义打点事件" />
+    <EditText android:textSize="12.0sp" android:layout_gravity="center_horizontal" android:id="@id/choosepage_edittext_event" android:layout_width="200.0dip" android:layout_height="wrap_content" android:hint="输入eventID" />
+    <EditText android:textSize="12.0sp" android:layout_gravity="center_horizontal" android:id="@id/choosepage_edittext" android:paddingBottom="20.0dip" android:layout_width="200.0dip" android:layout_height="wrap_content" android:hint="输入userProperties (map-json)" />
+    <View android:background="@color/qh_color_b3b3b3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/qh_color_red_ccfa3c55" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/choosepage_crash" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="Crash" />
+    <View android:background="@color/qh_color_b3b3b3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/qh_colorAccent" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/choosepage_sure" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="确定" />
+    <View android:background="@color/qh_color_b3b3b3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/qh_colorAccent" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/choosepage_cancel" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="取消" />
+</LinearLayout>

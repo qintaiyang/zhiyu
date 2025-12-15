@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_title" android:background="#ff3387d5" android:layout_width="fill_parent" android:layout_height="@dimen/default_title_height">
+        <ImageView android:id="@id/img_back" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/icon_back_white" android:paddingStart="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginLeft="4.0dip" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/img_back" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ff3387d5" android:layout_width="fill_parent" android:layout_height="140.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="80.0dip" android:src="@drawable/icon_lock" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="50.0dip" android:text="@string/unlocker_desc" />
+    </LinearLayout>
+    <com.kook.view.SwitcherItemView android:id="@id/swv_open_fingerprint" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:swLeftText="@string/open_fingerprint" />
+    <TextView android:textColor="@color/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="7.0dip" android:text="@string/setting_fingerprint_desc" />
+    <com.kook.view.SwitcherItemView android:id="@id/swv_gesture" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:swLeftText="@string/kk_gesture_lock" />
+    <com.kook.view.BaseItemView android:id="@id/piv_reset_gesture" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bottomLine="true" app:canEdit="false" app:textLeft="@string/reset_gesture" app:topLine="true" />
+    <com.kook.view.BaseItemView android:id="@id/piv_lock_time" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bottomLine="true" app:canEdit="false" app:textLeft="@string/set_lock_time" app:topLine="true" />
+</LinearLayout>

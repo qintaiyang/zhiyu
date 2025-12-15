@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="@dimen/user_head_height" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/user_head_text_size" android:textColor="@color/textColorPrimary" android:ellipsize="end" android:id="@id/head_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_item_margin_left" android:maxLines="1" android:layout_centerVertical="true" />
+</RelativeLayout>

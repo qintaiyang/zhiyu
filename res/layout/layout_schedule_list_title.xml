@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/base_title_bar" android:background="@color/scheduleTitleBGColor" android:layout_width="fill_parent" android:layout_height="44.0dip" toolbar:popupTheme="@style/ToolbarPopupTheme" toolbar:theme="@style/ToolbarTheme" toolbar:titleTextAppearance="@style/Toolbar.TitleText"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:toolbar="http://schemas.android.com/apk/res-auto">
+    <com.kook.view.avatar.AvatarImageView android:layout_gravity="center_vertical" android:id="@id/avatar_title" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" toolbar:roundedCornerRadius="3.0dip" />
+    <android.widget.Space android:layout_width="5.0dip" android:layout_height="1.0dip" />
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/text_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+</merge>

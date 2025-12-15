@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kook.kkbizbase.watermark.WaterMarkLinearLayout android:orientation="vertical" android:id="@id/root_watermark_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_schedule_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kook.view.calendar.WeekTitleView android:id="@id/weekTitleView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:weekTitleTextColor="#80ffffff" />
+        <View android:background="#80ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kook.view.calendar.MonthViewPager android:id="@id/flatMonthView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+        <RelativeLayout android:id="@id/rlDayView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.kook.view.ncalendar.calendar.NCalendar android:id="@id/ncalendar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:calendarHeight="264.0dip" app:calendarPrimaryColor="@color/schedulePrimaryColor" app:defaultCalendar="Week" app:firstDayOfWeek="Sunday" app:todayTextColor="@color/scheduleTodayTextColor">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <View android:background="@color/lineGray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <ImageView android:id="@id/toolbar_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginTop="1.0px" app:srcCompat="@drawable/toolbar_shadow" />
+                </RelativeLayout>
+            </com.kook.view.ncalendar.calendar.NCalendar>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ib_add_schedule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:animateLayoutChanges="true">
+            <com.kook.view.textview.IconTextView android:gravity="center" android:id="@id/itvIcon" android:background="@drawable/kk_icon_create_schedule" android:layout_width="80.0dip" android:layout_height="80.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.kook.kkbizbase.watermark.WaterMarkLinearLayout>

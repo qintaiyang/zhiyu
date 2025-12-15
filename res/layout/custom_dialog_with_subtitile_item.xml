@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题1" style="@style/custom_dialog_message_text_style" />
+    <TextView android:gravity="right" android:id="@id/subtitle" android:paddingRight="@dimen/dialog_text_margin_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="副标题1" android:layout_weight="1.0" style="@style/custom_dialog_message_subtitle_text_style" />
+</LinearLayout>

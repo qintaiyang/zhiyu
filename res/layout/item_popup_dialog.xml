@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/popup_dialog_item" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_height" android:lines="1" />
+    <View android:id="@id/popup_dialog_line" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_line_height" />
+</LinearLayout>

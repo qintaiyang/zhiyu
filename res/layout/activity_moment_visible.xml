@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_public" android:background="@drawable/item_moment_default_bg" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/cb_public" android:background="@drawable/cb_moment_visible_selector" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff32373c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fd_moment_visible_public" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff979ca4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/fd_moment_visible_public_desc" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_private" android:background="@drawable/item_moment_default_bg" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/cb_private" android:background="@drawable/cb_moment_visible_selector" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff32373c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fd_moment_visible_private" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff979ca4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/fd_moment_visible_private_desc" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_range" android:background="@drawable/item_moment_default_bg" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/cb_range" android:background="@drawable/cb_moment_visible_selector" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="#ff32373c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fd_moment_visible_range" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff979ca4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/fd_moment_visible_range_desc" />
+        </LinearLayout>
+        <TextView android:textColor="@color/moment_normal_blue_text_color" android:id="@id/tv_range_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/fd_moment_visible_range_count_desc" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

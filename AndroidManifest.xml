@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.kook.im" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <permission android:name="com.kook.im.push.permission.MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.kook.im.push.permission.MESSAGE"/>
+    <permission android:name="com.kook.im.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.kook.im.permission.C2D_MESSAGE"/>
+    <permission android:name="com.kook.im.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.kook.im.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"/>
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.huawei.pushagent.permission.RICHMEDIA_PROVIDER"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <permission android:name="com.kook.im.permission.LDSDK_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.kook.im.permission.LDSDK_MESSAGE"/>
+    <permission android:name="com.kook.im.permission.QDAS_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.kook.im.permission.QDAS_MESSAGE"/>
+    <permission android:name="com.kook.im.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+    <permission android:name="com.kook.im.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+    <permission android:name="com.kook.im.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.kook.im.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.kook.im.permission.PUSH_PROVIDER"/>
+    <uses-permission android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <queries>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core"/>
+        </intent>
+    </queries>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@drawable/app_icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.stub.StubApp" android:resizeableActivity="true" android:supportsRtl="true" android:theme="@style/CCWorkTheme" android:usesCleartextTraffic="true">
+        <meta-data android:name="TINKER_ID" android:value="ca2974cfde"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="38c9cee570ae9ebe29ccebcba396537f"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="561cae6ae0f55abd990035bf"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="10865183"/>
+        <meta-data android:name="push_kit_auto_init_enabled" android:value="true"/>
+        <meta-data android:name="com.hihonor.push.app_id" android:value="104410373"/>
+        <meta-data android:name="com.vivo.push.api_key" android:value="563345297c0d27070c08b24b59b63b5a"/>
+        <meta-data android:name="com.vivo.push.app_id" android:value="105477430"/>
+        <meta-data android:name="sdk_version_vivo" android:value="482"/>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kook.im.ui.welcome.SplashActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="im" android:scheme="ccwork"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="text/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="application/*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="text/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="application/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.coloros.push.notification"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.kook.im.ui.debug.DebugActivity" android:theme="@style/KKAppTheme">
+            <intent-filter>
+                <action android:name="kook.debug"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.debug.DebugLoggerActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.debug.LogListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.debug.SkinChangeActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.debug.ProductConfigActivity" android:theme="@style/KKAppTheme"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.kook.im.push.HuaWeiPushService" android:process=":core">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.kook.im.push.KKHonorMsgService" android:process=":core">
+            <intent-filter>
+                <action android:name="com.hihonor.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE" android:process=":core"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:process=":core"/>
+        <service android:exported="true" android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService" android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE" android:process=":core">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.heytap.msp.push.service.DataMessageCallbackService" android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE" android:process=":core">
+            <intent-filter>
+                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
+                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.vivo.push.sdk.service.CommandClientService" android:permission="com.push.permission.UPSTAGESERVICE" android:process=":core"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" android:process=":core">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.kook.im.push.MiPushMessageReceiver" android:process=":core">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.kook.im.push.FlymeMsgReceiver" android:process=":core">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
+                <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+                <category android:name="com.kook.im"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.kook.im.push.vivo.PushMessageReceiverImpl">
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.test.runner"/>
+        <provider android:authorities="com.kook.im.sdk.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.kook.im.provider.CCFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/kk_provider_paths"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="false" android:name="com.kook.im.updater.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.kook.sdk.KKService" android:process=":core"/>
+        <service android:name="com.kook.sdk.KKService$GrayInnerService" android:process=":core"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.kook.im.ui.home.MainActivity" android:screenOrientation="portrait" android:theme="@style/NoBackgroundTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.kook.im.ui.chat.ChatActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="kook.chat"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.CombineForwardListActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.ChatImagePreviewActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.GroupNoticeImageActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.ChatCombineImagePreviewActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chatfile.ChatImageActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chatfile.ChatFilesActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.kook.im.ui.login.LoginActivity" android:theme="@style/NoBackgroundTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.kook.im.ui.login.WebLoginActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.corpTree.CorpTreeActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.crosscloud.CrossCloudConnTreeActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.personal.PersionalInfoActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.common.AvatarViewerActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.EditItemActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.SettingActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.AccountSettingActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.ChangePwdActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.NotifySettingActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.CommonSettingActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ccdrive.DriveHomeActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ccdrive.DriveObjectListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ccdrive.DriveChooseNodeActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ccdrive.DriveTrashActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ccdrive.DriveObjectDetailActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ccdrive.DriveTeamMemberActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ccdrive.DriveFilePreviewActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ccdrive.DrivePicturePreviewActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ccdrive.DriveSearchFileActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.FontSizeActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.reminder.ReminderActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.common.UserDetailActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleInstance" android:name="com.kook.im.ui.FataNoticeActivity" android:theme="@style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.search.SearchActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.search.SearchDetailActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.view.bottomPhotoView.ui.PickerAlbumActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.view.bottomPhotoView.ui.PickerAlbumPreviewActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.view.bottomPhotoView.ui.PickImageActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.search.calendar.CalendarSearchActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.addr.AddrZoneActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.setting.GroupSettingActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.setting.GroupNoticeCreateActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.setting.GroupNoticeListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.setting.AboutMeActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.setting.GroupMembersActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:multiprocess="true" android:name="com.kook.im.ui.choose.ChooseActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.ChatInfoActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.common.DeptSelectedActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/my_group" android:name="com.kook.im.ui.chat.setting.GroupListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.updater.DownloadActivity" android:theme="@style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.AudioRemarkActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chatfile.FilePreviewActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.ChatMsgReadUserListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.CallAcceptUserListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.LanguageSettingActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.qrcode.edcode.QrCodeActvity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.qrcode.decode.HwMultiCaptureActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.ApplyGroupInfoActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.ApplyGroupEditActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.qrcode.decode.CaptureActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.kook.im.jsapi.browser.JsWebActivity" android:theme="@style/KKRotateTheme">
+            <intent-filter>
+                <action android:name="kook.web"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.jsapi.UserListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.AppInfoSettingActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.choose.ChooseResultActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.debug.DebugJsonActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.collect.CollectActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.collect.CollectionDetailActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.login.ResetInitPwdActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.collect.CollectionImageActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.qrcode.decode.QrResultActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.login.ForgetPwdActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.login.EmailVerifyActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.login.VerifyCodeActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.UnLockerActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.kook.im.ui.setting.GesturePwdActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.GestureInitActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.common.SelectItemActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.common.UserWorkCircleActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.view.video.VideoPlayerActivity" android:theme="@style/KKAppThemeFullScreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.schedule.ScheduleListActivity" android:theme="@style/KKAppThemeBlue"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.schedule.UnConfirmScheduleActivity" android:theme="@style/KKAppThemeBlue"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.schedule.ScheduleDetailActivity" android:theme="@style/KKAppThemeBlue"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.schedule.ScheduleDescActivity" android:theme="@style/KKAppThemeBlue"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.schedule.UserListActivity" android:theme="@style/KKAppThemeBlue"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.schedule.ScheduleSettingActivity" android:theme="@style/KKAppThemeBlue"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.onlineStatus.OnlineStatusActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.corpTree.MyDeptListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.view.video.VideoCaptureActivity" android:theme="@style/KKAppThemeFullScreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.friendcircle.publish.MomentsPublishActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.friendcircle.publish.MomentsLinkActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.friendcircle.publish.PublishPhotoPeviewActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.kkbizbase.gallery.PhotoBrowseActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.friendcircle.ui.commentmsg.RelatedCommentActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.friendcircle.ui.userPrivateMoment.PrivateMomentActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.friendcircle.ui.MomentDetailsActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.friendcircle.publish.MomentVisibleActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.externalContact.ExtContactActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.crosscloud.CrossCloudConnActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.follow.FollowContactActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.manager.CloseFriendListActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.manager.CloseFriendInviteActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.externalContact.ExtContactAddIndexActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.externalContact.ClusterListActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.externalContact.ExtContactSearchActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.externalContact.ExtContactInviteActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.contact.externalContact.ExtContactSearchInCorpActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.UserPrivacyActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.verify.RegisterVerifyActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/title_activity_user_verify" android:name="com.kook.im.ui.verify.UserVerifyActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.common.TestUserDetailActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.common.UserPrivacySettingActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.login.LoginPathSettingActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.bot.BotListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.workcircle.WorkCircleActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/work_card_sort" android:name="com.kook.im.ui.workportal.WorkPortalSortActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.login.ConfirmOtherClientLoginActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.DataPickerActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.schedule.ScheduleDayListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ztc.MessageZTCListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ztc.MessageZTCSettingActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ztc.MessageZTCDealLaterActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.ztc.MessageZTCReceiptActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.updater.InstallActivity" android:theme="@style/Install_Apk_Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.common.RelationshipChangeActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.group.GrMbrSetTagActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.home.HomeMenuSortActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.workbench.ui.CommonAppSettingActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.bot.GroupBotsListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.bot.AddGroupBotsActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.bot.BotsLDetialActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.fastreply.FastReplyListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.fastreply.AddFastreplyActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.setting.personal.EditWorkStateActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.SnapchatTimeActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.ui.chat.ReceiptUserListActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.filemanage.ui.FileChooseActivity" android:theme="@style/KKAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:exported="false" android:name="com.sangfor.ssl.service.timeqry.TimeQryService">
+            <intent-filter>
+                <action android:name="com.sangfor.ssl.vpn.sdk.action.ACTION_TIMEQRY"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.sangfor.ssl.l3vpn.service.EasyappSvpnService" android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="com.sangfor.ssl.l3vpn.service.EasyappSvpnService"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.friendcircle.publish.PublishVideoPeviewActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.conference.ui.TmpConferenceActivity" android:theme="@style/KKAppTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.conference.ui.AcceptConferenceActivity" android:theme="@style/KKAppTheme"/>
+        <service android:name="com.conference.service.ConferenceService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.im.view.video.VideoPreviewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.kook.view.bottomPhotoView.ui.IMGEditActivity" android:theme="@style/KKAppTheme"/>
+        <service android:name="com.qihoo.sdk.report.network.NetworkService"/>
+        <provider android:authorities="com.kook.im.provider.authority.kkmultiprocesssp" android:exported="false" android:name="com.qihoo.sdk.report.common.MultiprocessSharedPreferences"/>
+        <service android:enabled="true" android:exported="true" android:name="com.kook.sdk.KKJobSchedule" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":core"/>
+        <provider android:authorities="com.kook.im.bradge" android:exported="false" android:name="com.kook.sdk.interprocess.bradge.BusProvider" android:process=":core"/>
+        <provider android:authorities="com.kook.im.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <service android:exported="true" android:name="com.meizu.cloud.pushsdk.NotificationService"/>
+        <receiver android:exported="false" android:name="com.meizu.cloud.pushsdk.SystemReceiver">
+            <intent-filter>
+                <action android:name="com.meizu.cloud.pushservice.action.PUSH_SERVICE_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.kook.im.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.kook.im.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.kook.im.huawei.push.provider" android:exported="true" android:name="com.huawei.hms.support.api.push.PushProvider" android:readPermission="com.kook.im.permission.PUSH_PROVIDER" android:writePermission="com.kook.im.permission.PUSH_WRITE_PROVIDER"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:6.9.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <activity android:exported="false" android:name="com.huawei.hms.support.api.push.TransActivity"/>
+        <meta-data android:name="local_iv" android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI"/>
+        <meta-data android:name="sdkVersion" android:value="3000"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_CODE" android:value="50005"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_NAME" android:value="5_0_5-C"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"/>
+            </intent-filter>
+            <meta-data android:name="supportStyle" android:value="scene|voip"/>
+        </activity>
+        <meta-data android:name="com.hihonor.push.sdk_version" android:value="7.0.41.301"/>
+        <service android:enabled="true" android:exported="false" android:name="com.qihoo.miniapp.service.HostProcessService" android:stopWithTask="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.qihoo.miniapp.ui.activity.MiniAppActivity" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:multiprocess="true" android:name="com.qihoo.miniapp.ui.DocumentActivity" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="MiniApp0" android:name="com.qihoo.miniapp.ui.activity.MiniAppActivity$MiniApp0" android:taskAffinity=".MiniApp0" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="MiniApp1" android:name="com.qihoo.miniapp.ui.activity.MiniAppActivity$MiniApp1" android:taskAffinity=".MiniApp1" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="MiniApp2" android:name="com.qihoo.miniapp.ui.activity.MiniAppActivity$MiniApp2" android:taskAffinity=".MiniApp2" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="MiniApp3" android:name="com.qihoo.miniapp.ui.activity.MiniAppActivity$MiniApp3" android:taskAffinity=".MiniApp3" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="MiniApp4" android:name="com.qihoo.miniapp.ui.activity.MiniAppActivity$MiniApp4" android:taskAffinity=".MiniApp4" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.qihoo.miniapp.ui.activity.MiniAppPreActivity" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="MiniApp0" android:name="com.qihoo.miniapp.ui.activity.MiniAppPreActivity$MiniAppPre0" android:taskAffinity=".MiniApp0" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="MiniApp1" android:name="com.qihoo.miniapp.ui.activity.MiniAppPreActivity$MiniAppPre1" android:taskAffinity=".MiniApp1" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="MiniApp2" android:name="com.qihoo.miniapp.ui.activity.MiniAppPreActivity$MiniAppPre2" android:taskAffinity=".MiniApp2" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="MiniApp3" android:name="com.qihoo.miniapp.ui.activity.MiniAppPreActivity$MiniAppPre3" android:taskAffinity=".MiniApp3" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="MiniApp4" android:name="com.qihoo.miniapp.ui.activity.MiniAppPreActivity$MiniAppPre4" android:taskAffinity=".MiniApp4" android:theme="@style/qh_MABaseTheme"/>
+        <service android:enabled="true" android:exported="false" android:name="com.qihoo.miniapp.service.MiniAppService" android:stopWithTask="false"/>
+        <service android:enabled="true" android:exported="false" android:name="com.qihoo.miniapp.service.MiniAppService$MAS0" android:stopWithTask="false"/>
+        <service android:enabled="true" android:exported="false" android:name="com.qihoo.miniapp.service.MiniAppService$MAS1" android:stopWithTask="false"/>
+        <service android:enabled="true" android:exported="false" android:name="com.qihoo.miniapp.service.MiniAppService$MAS2" android:stopWithTask="false"/>
+        <service android:enabled="true" android:exported="false" android:name="com.qihoo.miniapp.service.MiniAppService$MAS3" android:stopWithTask="false"/>
+        <service android:enabled="true" android:exported="false" android:name="com.qihoo.miniapp.service.MiniAppService$MAS4" android:stopWithTask="false"/>
+        <activity android:multiprocess="true" android:name="com.qihoo.miniapp.ui.MiniAppPhotoBrowseActivity" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qihoo.miniapp.video.feature.main.container.RecordVideoActivity" android:screenOrientation="portrait" android:theme="@style/qh_FullScreenTheme"/>
+        <activity android:multiprocess="true" android:name="com.qihoo.miniapp.ui.widget.bottomPhotoView.video.VideoPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.qihoo.miniapp.ui.widget.bottomPhotoView.ui.IMGEditActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qihoo.miniapp.ui.widget.bottomPhotoView.ui.PickImageActivity" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qihoo.miniapp.ui.widget.bottomPhotoView.ui.PickerAlbumActivity" android:theme="@style/qh_MABaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qihoo.miniapp.ui.widget.bottomPhotoView.ui.PickerAlbumPreviewActivity" android:theme="@style/qh_MABaseTheme"/>
+        <provider android:authorities="com.kook.im.aaidinitprovider" android:exported="false" android:initOrder="500" android:name="com.huawei.hms.aaid.InitProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:6.9.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.8.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <meta-data android:name="huawei_module_scankit_local" android:value="10103300"/>
+        <meta-data android:name="huawei_module_scankit_sdk_version" android:value="scan:1.2.3.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:scan" android:value="scan:1.2.3.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:scan:huawei_module_scankit" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:scan:hmscore" android:value="1"/>
+        <activity android:name="com.huawei.hms.hmsscankit.ScanKitActivity"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ml-computer-camera-inner" android:value="ml-computer-camera-inner:2.0.3.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ml-computer-ha-inner" android:value="ml-computer-ha-inner:2.0.3.300"/>
+        <activity android:configChanges="locale|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.huawei.hms.activity.EnableServiceActivity"/>
+        <provider android:authorities="com.kook.im.MLInitializerProvider" android:exported="false" android:name="com.huawei.hms.mlsdk.common.provider.MLInitializerProvider"/>
+        <provider android:authorities="com.kook.im.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:dynamic-api" android:value="dynamic-api:1.0.13.303"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:dynamic-api:huawei_module_dynamicloader" android:value="2"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=10865183"/>
+    </application>
+</manifest>

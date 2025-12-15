@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/easy_dialog_title_button" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/empty" />
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/easy_dialog_title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/easy_dialog_title_button" style="@style/dialog_title_text_style" />
+    </RelativeLayout>
+    <View android:id="@id/title_line" android:background="@color/color_activity_blue_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dark_line_size" />
+</LinearLayout>

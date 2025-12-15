@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/comment_popup_contianer" android:background="@drawable/kk_bg_comment_popup" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="40.0dip" android:paddingStart="5.0dip" android:paddingEnd="5.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/item_like" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/kk_btn_like_white" android:layout_toLeftOf="@id/tv_like" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/comment_popup_tx_bg" android:id="@id/tv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赞  " android:minEms="3" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:id="@id/v_line" android:background="#ff3b3f42" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/item_comment" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/kk_btn_comment" android:layout_centerInParent="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/comment_popup_tx_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_comment" android:maxEms="4" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

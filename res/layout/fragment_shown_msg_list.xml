@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kook.view.calendar.WeekTitleView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.kook.view.calendar.WeekPager android:id="@id/week_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ListView android:id="@id/list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:transcriptMode="normal" android:divider="@null" />
+</LinearLayout>

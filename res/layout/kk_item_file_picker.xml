@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvAreaName" android:paddingRight="5.0dip" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:maxLines="2" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/colorPrimary" android:id="@id/tvAreaEdit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/select" android:layout_toRightOf="@id/tvAreaName" android:layout_alignBaseline="@id/tvAreaName" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llFileContainer" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvAreaName" android:layout_below="@id/tvAreaEdit">
+        <include layout="@layout/kk_layout_file_picker_item" />
+        <include layout="@layout/kk_layout_file_picker_item" />
+        <include layout="@layout/kk_layout_file_picker_item" />
+    </LinearLayout>
+</RelativeLayout>

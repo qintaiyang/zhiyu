@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rv_title" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="260.0dip" android:foreground="@drawable/bg_security_check_loading">
+        <ImageView android:id="@id/iv_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="52.0dip" android:text="@string/kk_environmental_safety_inspection" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_security" android:background="@drawable/kk_card_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/kk_16dp" android:layout_marginTop="@dimen/kk_16dp" android:layout_marginRight="@dimen/kk_16dp" android:layout_below="@id/rv_title" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_bottom" android:paddingLeft="@dimen/kk_16dp" android:paddingRight="@dimen/kk_16dp" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_size_17" android:gravity="center" android:id="@id/tv_login" android:background="@drawable/security_bottom_button_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_deep" android:gravity="center" android:id="@id/tv_close" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/close" />
+    </LinearLayout>
+</RelativeLayout>

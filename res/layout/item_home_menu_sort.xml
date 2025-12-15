@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_drag_item" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingStart="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kook.view.TextViewFit android:textColor="@color/text_deep" android:ellipsize="end" android:id="@id/txtTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxLines="1" android:layout_weight="1.0" />
+    <com.kook.view.TextViewFit android:textSize="12.0sp" android:textColor="@color/text_light" android:id="@id/txtNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/item_sort_menu_first_note" />
+    <ImageView android:id="@id/imgDrag" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_drag_flag" android:paddingEnd="12.0dip" />
+</LinearLayout>

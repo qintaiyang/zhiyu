@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_reset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="恢复到默认" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题颜色" />
+        <View android:id="@id/title_preview" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        <EditText android:id="@id/et_title_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_select_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选颜色" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="背景颜色" />
+        <View android:id="@id/bg_preview" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        <EditText android:id="@id/et_title_bg_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_select_title_bg_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选颜色" />
+    </LinearLayout>
+    <Button android:id="@id/btn_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="保存" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="#ff556a94" android:gravity="center_vertical" android:id="@id/tvExpand" android:layout_width="wrap_content" android:layout_height="44.0dip" android:text="@string/kk_expand_detail" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kook.view.textview.IconTextView android:textSize="13.0sp" android:textColor="#ff556a94" android:id="@id/itvIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_biz_nav_pulldown" android:layout_marginStart="5.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/tvExpand" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

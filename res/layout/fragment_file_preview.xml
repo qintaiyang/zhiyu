@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/activity_file_preview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.kook.im.view.file.FilePreviewView android:id="@id/filePreviewView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llFileView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/ivFileType" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/icon_no" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/tv_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_file_fail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff979ca4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_file_download_fail" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/blue_light" android:id="@id/tv_file_continue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/chat_file_down_continue" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_file_not_exist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff979ca4" android:id="@id/file_delete_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_file_download_file_not_exist" />
+            </LinearLayout>
+            <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="@color/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_file" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textColor="@color/text_blue_selector" android:gravity="center" android:id="@id/tv_file_result" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/chat_file_open" android:layout_weight="1.0" />
+        <View android:background="#ffe5e5e5" android:layout_width="@dimen/default_item_line_height" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <TextView android:textColor="@color/text_blue_selector" android:gravity="center" android:id="@id/tv_forword" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/chat_file_forword" android:layout_weight="1.0" />
+        <View android:background="#ffe5e5e5" android:layout_width="@dimen/default_item_line_height" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <TextView android:textColor="@color/text_blue_selector" android:gravity="center" android:id="@id/tv_star" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/chat_file_star" android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ProgressBar android:id="@id/progress_bar_download" android:layout_width="0.0dip" android:layout_height="3.0dip" android:max="100" android:progressDrawable="@drawable/progress_drawable_horizon" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <ImageView android:id="@id/img_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:src="@drawable/icon_download_pause" app:layout_constraintEnd_toStartOf="@id/tv_progress" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/progress_bar_download" />
+        <TextView android:textColor="@color/text_deep" android:id="@id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/chat_file_progress_text" app:layout_constraintBottom_toBottomOf="@id/img_pause" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/img_pause" app:layout_constraintTop_toTopOf="@id/img_pause" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_sync_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:src="@drawable/icon_download_pause" />
+        <TextView android:id="@id/tv_sync_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/file_sync_count_down" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/bottom_layout" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_menu_layout1" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="#ffa6a6a6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/menu_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/keyboard" android:background="@drawable/icon_history" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="0.5" />
+                <View android:background="#ffa6a6a6" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <RelativeLayout android:id="@id/btn1" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="用户绑定" android:layout_centerInParent="true" />
+                        <ImageView android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/icon_history" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:background="#ffa6a6a6" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <RelativeLayout android:id="@id/btn2" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/text2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="扫描签到" android:layout_centerInParent="true" />
+                        <ImageView android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/icon_history" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:background="#ffa6a6a6" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <RelativeLayout android:id="@id/btn3" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/text3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="更多" android:layout_centerInParent="true" />
+                        <ImageView android:visibility="visible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/icon_history" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

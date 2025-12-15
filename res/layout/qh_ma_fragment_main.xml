@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/qh_ma_layout_title" />
+    <com.qihoo.miniapp.ui.widget.RotateTextView android:textSize="10.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/rtv_superscript_text" android:background="@color/qh_devSuperscriptColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="develop" android:layout_alignParentEnd="true" app:qh_rightEdge="44.0dip" app:qh_rtv_gravity="rightTop" app:qh_smallRightEdge="22.0dip" app:qh_smallTopEdge="22.0dip" app:qh_topEdge="44.0dip" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title_mini_app">
+        <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/floatingActionButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:src="@drawable/qh_icon_capture_video_ok" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:layout_alignParentEnd="true" app:backgroundTint="#ffff4011" app:borderWidth="0.0dip" app:elevation="8.0dip" app:pressedTranslationZ="16.0dip" app:rippleColor="#33728dff" />
+</RelativeLayout>

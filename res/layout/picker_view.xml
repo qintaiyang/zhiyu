@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/item_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kook.view.dialog.PickerView android:id="@id/picker_hour" android:layout_width="0.0dip" android:layout_height="160.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" />
+        <com.kook.view.dialog.PickerView android:id="@id/picker_minute" android:layout_width="0.0dip" android:layout_height="160.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/kk_remove" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/ok" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/kk_done" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

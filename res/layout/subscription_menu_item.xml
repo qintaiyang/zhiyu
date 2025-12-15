@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_selector_menu_item" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="start" android:background="@color/bg_gray_e6e9ed" android:layout_width="0.5dip" android:layout_height="fill_parent" app:layout_constraintStart_toEndOf="parent" />
+    <com.kook.view.TextViewFit android:textSize="@dimen/material_text_menu" android:textColor="@color/text_deep" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="78.0dip" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:drawablePadding="4.0dip" />
+</FrameLayout>

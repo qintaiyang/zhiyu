@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kook.view.textview.IconTextView android:gravity="center" android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="32.0dip" android:minWidth="32.0dip" style="@style/Widget.AppCompat.Toolbar.Button.Navigation" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_badge" android:background="@drawable/circle_red" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="-5.0dip" android:layout_alignTop="@id/iv_icon" android:layout_alignRight="@id/iv_icon" />
+</RelativeLayout>
